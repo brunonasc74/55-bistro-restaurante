@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
     p {
-        opacity: 0.6;
+        opacity: 0.8;
         line-height: 1.5;
     }
     img {
