@@ -27,9 +27,10 @@ export const StyledCarousel = styled.div`
 	}
 
 	h1 {
+		font-family: 'Dancing Script', cursive;
 		line-height: 1;
-		font-size: 5vw;
-		font-weight: bold;
+		font-size: 7vw;
+		font-weight: normal;
 		margin-bottom: 40px;
 	}
 
@@ -52,6 +53,24 @@ export const StyledCarousel = styled.div`
 			transform: translateY(-5px);
 			height: 2px;
 			background-color: #ff3a39;
+		}
+	}
+
+	@media (max-width: ${({ theme }) => theme.screen.lg}) {
+		h1 {
+			font-size: 12vw;
+		}
+	}
+	@media (max-width: ${({ theme }) => theme.screen.sm}) {
+		h1 {
+			font-size: 15vw;
+		}
+		p:nth-of-type(2) {
+			&::after,
+			&::before {
+				margin: 0 1rem;
+				width: 60px;
+			}
 		}
 	}
 `;
