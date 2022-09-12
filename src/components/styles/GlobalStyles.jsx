@@ -10,7 +10,8 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        color: #00252e;
+        background-color: #111419;
+        color: #FFF;
         font-family: 'Poppins', sans-serif;
         font-size: 1.15em;
         margin: 0;
