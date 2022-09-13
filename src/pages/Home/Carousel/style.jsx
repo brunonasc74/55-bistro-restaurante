@@ -57,6 +57,8 @@ export const StyledCarousel = styled.div`
 	@media (max-width: ${({ theme }) => theme.screen.sm}) {
 		h1 {
 			font-size: 15vw;
+			margin: 0 20px;
+			margin-top: 40px;
 		}
 		p:nth-of-type(2) {
 			&::after,
