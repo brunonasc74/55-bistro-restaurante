@@ -5,7 +5,6 @@ export const StyledCarousel = styled.div`
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-left: -1px;
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
@@ -16,13 +15,9 @@ export const StyledCarousel = styled.div`
 	p:nth-of-type(1) {
 		font-weight: 900;
 		letter-spacing: 5px;
-		display: inline-block;
 		margin-bottom: 10px;
 		border: thin solid rgba(255, 255, 255, 0.5);
-		padding: 0 10px;
-		position: relative;
-		line-height: 2;
-		z-index: 0;
+		padding: 5px 10px;
 		text-shadow: 0px 2px 2px #000;
 	}
 
@@ -32,15 +27,13 @@ export const StyledCarousel = styled.div`
 		font-size: 7vw;
 		font-weight: normal;
 		margin-bottom: 40px;
+		text-align: center;
 	}
 
 	p:nth-of-type(2) {
 		color: #ff3a39;
 		font-size: 18px;
 		font-weight: 700;
-		display: inline-block;
-		position: relative;
-		z-index: 0;
 		letter-spacing: 5px;
 		text-shadow: 0 2px 2px #000;
 

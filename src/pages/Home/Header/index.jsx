@@ -16,7 +16,7 @@ const Header = () => {
 			>
 				<Carousel
 					subHeading={'+55 Bistrô'}
-					heading={'Pizza de melhor'}
+					heading={'Pratos de melhores'}
 					subHeading2={'QUALIDADE'}
 					background={'home-slide-1.jpg'}
 				/>
