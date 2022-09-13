@@ -1,4 +1,5 @@
 import Home from './pages/Home';
+import Reserva from './pages/Reserva';
 
 function App() {
 	{
@@ -6,7 +7,7 @@ function App() {
 	}
 	return (
 		<div>
-			<span />
+			<Reserva />
 		</div>
 	);
 }
