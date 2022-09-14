@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from './Form/Form';
-import Left from './LeftContainer/Left';
+import Left from './LeftContainer/LeftContainer';
 
 
 const Reserva = () => {
