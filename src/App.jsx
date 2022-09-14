@@ -1,3 +1,5 @@
+
+import Nav from './components/Nav';
 import Home from './pages/Home';
 
 function App() {
@@ -6,7 +8,8 @@ function App() {
 	}
 	return (
 		<div>
-			<span />
+			<Nav />
+			<Home />
 		</div>
 	);
 }
