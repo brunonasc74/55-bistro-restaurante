@@ -11,6 +11,18 @@ p {
   width: 65%;
   text-align: center;
 }
+
+@media (max-width: ${({ theme }) => theme.screen.sm}) {
+
+p {
+    margin-top: 1rem;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+
+}
 `
 
 export const Box = styled.div`
@@ -18,6 +30,25 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 2rem;
+
+h1 {
+  font-size: 35px;
+  color: #ff3a39;
+}
+
+  @media (max-width: ${({ theme }) => theme.screen.sm}) {
+
+    h1 {
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: ${({ theme }) => theme.screen.sm}) {
+  h1 {
+    font-size: 20px;
+  }
+}
 `
 
 export const Animation = styled.div`
@@ -89,4 +120,10 @@ export const Animation = styled.div`
  }
 }
 
+@media (max-width: ${({ theme }) => theme.screen.sm}) {
+  width: 1em;
+ height: 1em;
+ transform: rotate(165deg);
+
+}
 `
