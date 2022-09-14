@@ -14,4 +14,9 @@ const Title = ({ preTitle, mainTitle }) => {
 	);
 };
 
+Title.defaultProps = {
+	preTitle: 'preTitle',
+	mainTitle: 'mainTitle'
+};
+
 export default Title;
