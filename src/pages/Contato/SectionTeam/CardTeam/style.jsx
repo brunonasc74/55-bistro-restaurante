@@ -6,11 +6,10 @@ flex-direction: column;
 justify-content: center;
 `
 export const Card = styled.div`
-/* background-color: rgb(88, 88, 88); */
 display: flex;
 justify-content: space-between;
-/* align-items: center; */
-gap: 100px;
+align-items: center;
+gap: 50px;
 padding: 2rem;
 margin-top: 1rem;
 
@@ -20,6 +19,12 @@ img {
   border-radius: 50%;
   border: 3px solid #FF3A39;
 }
+
+@media (max-width: ${({ theme }) => theme.screen.sm}) {
+  display: flex;
+  flex-direction: column;
+}
+
 `
 
 export const ContainerCard = styled.div`
@@ -82,4 +87,54 @@ p {
   font-size: 1.1rem;
   color: #fff;
 }
+
+@media (max-width: ${({ theme }) => theme.screen.sm}) {
+  min-width: 500px;
+  height: 250px;
+  padding: 2rem;
+}
+
+h4 {
+  font-size: 16px;
+  color: #FF3A39;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (max-width: ${({ theme }) => theme.screen.xs}) {
+  min-width: 380px;
+  height: 250px;
+  padding: 2rem;
+}
+
+h4 {
+  font-size: 16px;
+  color: #FF3A39;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+}
+
+@media(max-width: 400px) {
+  min-width: 280px;
+  height: 250px;
+  padding: 2rem;
+
+  h4 {
+  font-size: 14px;
+  color: #FF3A39;
+}
+
+p {
+  font-size: 12px;
+  color: #fff;
+}
+}
+
+
 `

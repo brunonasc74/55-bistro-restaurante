@@ -2,6 +2,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "../../../../theme";
 import GlobalStyles from "../../../../components/styles/GlobalStyles";
 import { Card, ContainerCard, BoxIcons, BoxText } from "./style";
+import { CardReverse } from "./CardReverse.style";
 import { FaTwitter } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { ImLinkedin } from "react-icons/im";
@@ -11,7 +12,7 @@ const CardTeamReverse = ({ image, name, role, github, linkedin, twitter, text })
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <>
-        <Card>
+        <CardReverse>
           <BoxText>
             <h4>Um pouco sobre mim..</h4>
             <p>{text}</p>
@@ -34,7 +35,7 @@ const CardTeamReverse = ({ image, name, role, github, linkedin, twitter, text })
               </a>
             </BoxIcons>
           </ContainerCard>
-        </Card>
+        </CardReverse>
       </>
     </ThemeProvider>
   );
