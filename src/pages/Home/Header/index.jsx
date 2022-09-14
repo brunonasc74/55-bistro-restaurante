@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import { StyledHeader } from './style';
 import Carousel from '../Carousel';
 import ElasticCarousel from 'react-elastic-carousel';

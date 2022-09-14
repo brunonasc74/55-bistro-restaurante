@@ -7,19 +7,19 @@ export const StyledCardReview = styled.div`
 	max-width: 500px;
 	min-height: 400px;
 	background-color: #0d0d14;
-	border-radius: 20px;
+	border-radius: 10px;
 	padding: 40px;
-	margin: 20px;
+	cursor: pointer;
 	.flex {
+		display: flex;
+		justify-content: start;
+		align-items: center;
 		img {
 			width: 6rem;
 			height: 6rem;
 			margin: 0 20px 10px 0;
 			border-radius: 50%;
 		}
-		display: flex;
-		justify-content: start;
-		align-items: center;
 		.title-flex {
 			display: flex;
 			flex-direction: column;
@@ -39,6 +39,21 @@ export const StyledCardReview = styled.div`
 		color: #ffd000;
 		* {
 			margin-right: 5px;
+		}
+	}
+
+	@media (max-width: ${({ theme }) => theme.screen.sm}) {
+		padding: 15px;
+		p {
+			font-size: 1rem;
+		}
+	}
+	@media (max-width: 388px) {
+		.flex {
+			flex-direction: column;
+		}
+		.title-flex {
+			text-align: center;
 		}
 	}
 `;
