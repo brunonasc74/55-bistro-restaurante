@@ -1,17 +1,17 @@
 import Title from '../Title';
 import { StyledRecipe } from './style';
-import Container from '../../../components/styles/Container';
+import ElasticCarousel from 'react-elastic-carousel';
 import CardRecipe from '../CardRecipe';
 
 const Recipe = () => {
 	return (
 		<StyledRecipe>
 			<Title preTitle={'Nossas receitas'} mainTitle={'Recomendação do chef'} />
-			<div className='grid'>
+			<ElasticCarousel>
 				<CardRecipe />
 				<CardRecipe />
 				<CardRecipe />
-			</div>
+			</ElasticCarousel>
 		</StyledRecipe>
 	);
 };

@@ -5,8 +5,14 @@ export const StyledCardRecipe = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 400px;
 	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		padding: 20px;
+
+		min-height: 300px;
 		h3 {
 			font-weight: normal;
 		}
@@ -17,6 +23,7 @@ export const StyledCardRecipe = styled.div`
 		.flex {
 			display: flex;
 			align-items: center;
+			bottom: 0;
 			p {
 				margin-left: 10px;
 				span {
