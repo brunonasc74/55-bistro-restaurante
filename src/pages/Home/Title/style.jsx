@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledTitle = styled.div`
 	margin-top: 100px;
+	margin-bottom: 75px;
 	text-align: center;
 	h3 {
 		font-family: 'Dancing Script', cursive;
