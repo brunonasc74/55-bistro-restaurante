@@ -11,7 +11,7 @@ const Footer = () => {
 		<div className="footer-top">
 			
 			<div className="flex-col coluna1">
-				<h4 className="logo-name">+55 Bistrô</h4>
+				<h4 className="logo-name">+55 <span>Bistrô</span></h4>
 				<p className="descricao">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit amet consectetur adipisici</p>
 				<ul className="social">
 					<li><a href=""><BsFacebook/></a></li>
@@ -71,6 +71,10 @@ const Footer = () => {
 					<a href="#">Reservas</a>
 					<a href="#">Equipe</a>
 			</div>
+		</div>
+
+		<div className="footer-bottom flex-row">
+			<span>Copyright &copy 2022 | Squad 1</span>
 		</div>
 
 	</Container>

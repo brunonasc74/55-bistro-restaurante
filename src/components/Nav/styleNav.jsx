@@ -8,12 +8,14 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 background-color: #0d0d14;
+height: 6.5rem;
 
 a {
   text-decoration: none;
 }
 
 .logo{
+  font-size: 1.6rem;
   color: #ff3a39;
 }
 
@@ -22,7 +24,7 @@ span{
 }
 
 ul {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -33,6 +35,10 @@ ul {
   }
 }
 
+ul a:hover {
+  color: #ff3a39;
+  transition: 0.3s;
+}
 
 .inc{
   display: flex;

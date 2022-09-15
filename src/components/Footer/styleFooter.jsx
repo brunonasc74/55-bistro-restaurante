@@ -16,8 +16,15 @@ background-color: #0d0d14;
 
 .flex-col{
   width: 22rem;
+  
 }
 
+.footer-top .flex-col .logo-name {
+  color: #b41212;
+  span{
+    color: white;
+  }
+}
 
 .footer-top .flex.col{
   width: 15rem;
@@ -44,6 +51,8 @@ background-color: #0d0d14;
 
 .footer-top .flex-col .social li{
   list-style-type: none;
+  display: flex;
+  
 }
 
 .footer-top .flex-col .social li a{
@@ -72,17 +81,43 @@ background-color: #0d0d14;
   justify-content: space-between;
   width: 75%;
   height: 30px;
-  font-size: 14px;
 }
 
-.footer-top .flex-col .time li .days {
+.footer-top .flex-col .timings li .days {
   color: white;
   font-size: 14px;
 }
 
-.footer-top .flex-col .time li .time {
-  color: #858585;
+.footer-top .flex-col .timings li .time {
+  color: #686868;
   font-size: 14px;
+}
+
+.footer-top .flex-col a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgba(255,255,255, 0.7);
+  font-size: 14px;
+  padding: 5px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-top .flex-col a:hover{
+  color: #b41212;
+}
+
+.footer-bottom{
+  background-color: #b41212;
+  height: 3rem;
+  text-align: center;
+  
+}
+
+.footer-bottom span{
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  
 }
 
 `
