@@ -1,10 +1,17 @@
-import { FaClock } from 'react-icons/fa';
+import { FaClock, FaLink } from 'react-icons/fa';
 import { StyledCardRecipe } from './style';
 
 const CardRecipe = ({ imagem, titulo, descricao, tempo }) => {
 	return (
 		<StyledCardRecipe>
-			<img src={imagem} alt='Receita' />
+			<div className='img-wrap'>
+				<img src={imagem} alt='Receita' />
+				<div className='overlay'>
+					<i>
+						<FaLink />
+					</i>
+				</div>
+			</div>
 			<div className='text'>
 				<h3>{titulo}</h3>
 				<p>{descricao}</p>
