@@ -24,7 +24,7 @@ export const StyledRecipe = styled.section`
 		background-color: #d41a1a99;
 	}
 
-	@media (max-width: 1210px) {
+	@media (max-width: 1227px) {
 		.container {
 			width: 850px;
 		}
