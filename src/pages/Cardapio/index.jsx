@@ -1,15 +1,23 @@
 import { ThemeProvider } from "styled-components";
 import theme from "../../theme";
 import GlobalStyles from "../../components/styles/GlobalStyles";
-const Cardapio = () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <>
-        <p>X pro Magnus do passado pegar</p>
-      </>
-    </ThemeProvider>
-  );
-};
+import { StyledCardapio } from 'style';
+import Card from './Card';
 
-export default Cardapio;
+
+export function Cardapio () {
+  const [food, setFood] = useState([]);
+  const url = `${aksjmokfl}`
+
+  const getApi = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setFood(data);
+  };
+
+  return (
+    <StyledCardapio>
+      
+    </StyledCardapio>
+  )
+}
