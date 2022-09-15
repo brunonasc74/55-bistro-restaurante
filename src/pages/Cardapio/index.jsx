@@ -1,23 +1,29 @@
 import { ThemeProvider } from "styled-components";
 import theme from "../../theme";
 import GlobalStyles from "../../components/styles/GlobalStyles";
-import { StyledCardapio } from 'style';
 import Card from './Card';
+import Title from '../../components/Title';
 
 
-export function Cardapio () {
-  const [food, setFood] = useState([]);
-  const url = `${aksjmokfl}`
+function Cardapio () {
+  // const [food, setFood] = useState([]);
+  // const url = `${aksjmokfl}`
 
-  const getApi = async () => {
-    const response = await fetch(url);
-    const data = await response.json();
-    setFood(data);
-  };
+  // const getApi = async () => {
+  //   const response = await fetch(url);
+  //   const data = await response.json();
+  //   setFood(data);
+  // };
 
   return (
-    <StyledCardapio>
-      
-    </StyledCardapio>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <>
+      <Title preTitle={"Bruna lidna"} mainTitle={"alou"} />
+      <Card />
+      </>     
+    </ThemeProvider>
   )
 }
+
+export default Cardapio;
