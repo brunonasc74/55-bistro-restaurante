@@ -5,7 +5,6 @@ export const StyledCarousel = styled.div`
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-left: -1px;
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
@@ -16,30 +15,25 @@ export const StyledCarousel = styled.div`
 	p:nth-of-type(1) {
 		font-weight: 900;
 		letter-spacing: 5px;
-		display: inline-block;
 		margin-bottom: 10px;
 		border: thin solid rgba(255, 255, 255, 0.5);
-		padding: 0 10px;
-		position: relative;
-		line-height: 2;
-		z-index: 0;
+		padding: 5px 10px;
 		text-shadow: 0px 2px 2px #000;
 	}
 
 	h1 {
+		font-family: 'Dancing Script', cursive;
 		line-height: 1;
-		font-size: 5vw;
-		font-weight: bold;
+		font-size: 7vw;
+		font-weight: normal;
 		margin-bottom: 40px;
+		text-align: center;
 	}
 
 	p:nth-of-type(2) {
 		color: #ff3a39;
 		font-size: 18px;
 		font-weight: 700;
-		display: inline-block;
-		position: relative;
-		z-index: 0;
 		letter-spacing: 5px;
 		text-shadow: 0 2px 2px #000;
 
@@ -52,6 +46,26 @@ export const StyledCarousel = styled.div`
 			transform: translateY(-5px);
 			height: 2px;
 			background-color: #ff3a39;
+		}
+	}
+
+	@media (max-width: ${({ theme }) => theme.screen.lg}) {
+		h1 {
+			font-size: 12vw;
+		}
+	}
+	@media (max-width: ${({ theme }) => theme.screen.sm}) {
+		h1 {
+			font-size: 15vw;
+			margin: 0 20px;
+			margin-top: 40px;
+		}
+		p:nth-of-type(2) {
+			&::after,
+			&::before {
+				margin: 0 1rem;
+				width: 60px;
+			}
 		}
 	}
 `;
