@@ -1,7 +1,7 @@
 import Container from '../../../components/styles/Container';
 import ElasticCarousel from 'react-elastic-carousel';
 import { StyledSection } from './style';
-import Title from '../Title';
+import Title from '../../../components/Title';
 import CardReview from '../CardReview';
 
 const breakPoints = [
