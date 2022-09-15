@@ -5,7 +5,6 @@ export const StyledSection = styled.section`
 		width: 1600px;
 		max-width: 95%;
 		margin: 0 auto;
-		position: relative;
 	}
 	.rec-slider-container {
 		margin: 0;

@@ -6,12 +6,12 @@ export const StyledCardRecipe = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	width: 400px;
+
 	.text {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 20px;
-
 		min-height: 300px;
 		h3 {
 			font-weight: normal;
@@ -32,9 +32,5 @@ export const StyledCardRecipe = styled.div`
 				}
 			}
 		}
-	}
-
-	@media (max-width: ${({ theme }) => theme.screen.lg}) {
-		grid-template-columns: repeat(1, 1fr) !important;
 	}
 `;
