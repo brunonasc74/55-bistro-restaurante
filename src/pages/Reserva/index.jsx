@@ -1,13 +1,24 @@
 import React from 'react';
-import Form from './Form/Form';
-import Left from './LeftContainer/LeftContainer';
+import BoxReservation from './BoxReservation';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from '../../components/styles/GlobalStyles';
+import theme from '../../theme';
+import Form from './Form';
 
 
 const Reserva = () => {
-	return <div>
-		<Left></Left>
-		<Form></Form>
-	</div>;
+
+	return (
+	
+	<ThemeProvider theme={theme}>
+	<GlobalStyles />
+	<>
+		<BoxReservation />
+		<Form />
+	</>
+
+	</ThemeProvider>
+	)
 };
 
 export default Reserva;
