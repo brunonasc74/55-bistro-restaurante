@@ -4,6 +4,7 @@ import GlobalStyles from '../../components/styles/GlobalStyles';
 import Header from './Header';
 import Review from './Review';
 import Recipe from './Recipe';
+import PreFooter from './PreFooter';
 
 const Home = () => {
 	return (
@@ -13,6 +14,7 @@ const Home = () => {
 				<Header />
 				<Review />
 				<Recipe />
+				<PreFooter />
 			</>
 		</ThemeProvider>
 	);
