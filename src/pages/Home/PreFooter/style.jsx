@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledPreFooter = styled.section`
 	margin-top: 50px;
-	padding: 90px 0;
+	padding: 70px 0;
 	background-color: #ff3a39;
 	text-align: center;
 	div {
