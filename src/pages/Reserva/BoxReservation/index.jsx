@@ -5,6 +5,8 @@ import { StyledBoxReservation, LeftContainer, Description, Title } from './style
 const BoxReservation = () => {
   return (
 
+
+
     <Container>
       <StyledBoxReservation>
         <LeftContainer>

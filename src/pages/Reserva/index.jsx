@@ -3,8 +3,7 @@ import BoxReservation from './BoxReservation';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../../components/styles/GlobalStyles';
 import theme from '../../theme';
-import Form from './Form';
-
+import BoxForm from './Form';
 
 const Reserva = () => {
 
@@ -14,7 +13,7 @@ const Reserva = () => {
 	<GlobalStyles />
 	<>
 		<BoxReservation />
-		<Form />
+		<BoxForm />
 	</>
 
 	</ThemeProvider>
