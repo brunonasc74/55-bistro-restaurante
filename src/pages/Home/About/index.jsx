@@ -23,7 +23,8 @@ const About = () => {
         <CardAbout/>
       </Container>
     </>
-  );
+  )
 };
+
 
 export default About;
