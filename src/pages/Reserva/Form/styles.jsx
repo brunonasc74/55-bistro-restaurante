@@ -6,7 +6,7 @@ export const RightContainer = styled.div`
   grid-column: 2/3;
   background: url("");
   background-size: cover;
-  margin: -10px 0 0px 600px;
+  margin: -25px 0 0px 600px;
   background-repeat: no-repeat;
   position: relative;
 `;
@@ -26,7 +26,7 @@ export const FormContainer = styled.div`
   }
 
   input {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
     padding: 0.3rem 0.5rem;
     margin-top: 7px;
     border-radius: 5px;
