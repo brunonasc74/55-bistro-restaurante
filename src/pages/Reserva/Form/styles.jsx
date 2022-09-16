@@ -6,9 +6,9 @@ export const RightContainer = styled.div`
   grid-column: 2/3;
   background: url("");
   background-size: cover;
-  left: 537px;
+  margin: -10px 0 0px 600px;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
 `;
 
 export const FormContainer = styled.div`
