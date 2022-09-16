@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../../../components/styles/Container";
+// import Container from "../../../components/styles/Container";
 import useForm from "./useForm";
 import {
   RightContainer,
@@ -26,7 +26,7 @@ const BoxForm = () => {
   }
 
   return (
-    <Container>
+    // <Container>
     <RightContainer>
       <FormContainer>
         <form onSubmit={handleSubmit}>
@@ -35,6 +35,8 @@ const BoxForm = () => {
           </ImgContainer>
 
           <FormInner>
+
+          <div className="boxOne">
             <input
               id="name"
               type="text"
@@ -47,18 +49,21 @@ const BoxForm = () => {
               id="cpf"
               type="text"
               required
-              placeholder="000.000.000-00"
+              placeholder="CPF"
               {...cpf}
             />
+          </div>
 
+          <div className="boxTwo">
             <input type="email" required placeholder="Email" {...email} />
 
             <input
               type="tel"
               id="phone"
               required
-              placeholder="(xx) xxxxx-xxxx" {...phone}
+              placeholder="Telefone" {...phone}
             />
+          </div>
 
             <DateTime>
               <input type="date" />
@@ -68,12 +73,35 @@ const BoxForm = () => {
             <button>
               <span>Agendar</span>
             </button>
-          </FormInner>
+
+            </FormInner>
         </form>
       </FormContainer>
     </RightContainer>
-    </Container>
-  );
-};
+    // </Container>
+
+          // <RightContainer>
+          //   <div className="formContainer">
+          //   <form onSubmit={handleSubmit}>
+          //     <div className="imgContainer">
+          //       <img src="./public/images/restaurant.jpg" alt="imagem parte interna de um restaurante" />
+          //     </div>
+
+          //     <div className="formInner">
+          //       <input type="name" className="name" required placeholder="Nome e sobrenome" />
+          //       <div className="dateTime">
+          //         <input type="date" className="date" />
+          //         <input type="time" className="time"/>
+          //       </div>
+
+          //       <button>
+          //         <span>Agendar</span>
+          //       </button>
+          //     </div>
+          //   </form>
+          //   </div>
+          // </RightContainer>
+      );
+    };
 
 export default BoxForm;

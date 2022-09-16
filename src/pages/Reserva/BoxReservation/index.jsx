@@ -1,19 +1,16 @@
 import React from 'react';
-import Container from '../../../components/styles/Container';
-import { StyledBoxReservation, LeftContainer, Description, Title } from './style';
+// import Container from '../../../components/styles/Container';
+import { Description, LeftContainer, StyledBoxReservation, Title, Contaiiner } from './style';
 
 const BoxReservation = () => {
   return (
-
-
-
-    <Container>
+    <Contaiiner>
       <StyledBoxReservation>
         <LeftContainer>
           <Description>
             <Title>
-              <h1>Reservation</h1>
-              <h2>Make a Romantic Atmosphere Here</h2>
+              <h1>Reserva</h1>
+              <h2>Tenha um encontro romântico</h2>
             </Title>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
@@ -22,9 +19,8 @@ const BoxReservation = () => {
           </Description>
         </LeftContainer>
       </StyledBoxReservation>
-    </Container>
-  )
+    </Contaiiner>
+  );
 };
-
 
 export default BoxReservation;
