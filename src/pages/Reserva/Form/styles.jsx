@@ -57,6 +57,7 @@ export const FormInner = styled.div`
     font-size: 1rem;
     display: flex;
     align-items: center;
+    border: none;
     gap: 0.8rem;
     font-weight: 600;
     background: #dfae67;
