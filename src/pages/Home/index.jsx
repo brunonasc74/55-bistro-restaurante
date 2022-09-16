@@ -2,6 +2,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../../theme';
 import GlobalStyles from '../../components/styles/GlobalStyles';
 import Header from './Header';
+import About from './About';
 import Review from './Review';
 import Event from './Event';
 import Recipe from './Recipe';
@@ -13,6 +14,7 @@ const Home = () => {
 			<GlobalStyles />
 			<>
 				<Header />
+				<About />
 				<Review />
 				<Event />
 				<Recipe />
