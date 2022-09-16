@@ -6,9 +6,23 @@ flex-direction: column;
 align-items: center;
 
 .p-about {
-  width: 50rem;
+  width: 40rem;
   text-align: center;
   margin-bottom: 3rem;
+}
+
+@media (max-width: ${({ theme }) => theme.screen.sm}) {
+  .p-about {
+    width: 30rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.screen.xs}) {
+    .p-about {
+    width: 25rem;
+    font-size: 16px;
+    padding: 1rem;
+  }
+  }
 }
 `
 

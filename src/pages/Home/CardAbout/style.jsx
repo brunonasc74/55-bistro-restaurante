@@ -24,4 +24,24 @@ h4 {
   text-align: left;
   font-size: 16px;
  }
+
+ @media (max-width: ${({ theme }) => theme.screen.xs}) {
+  span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff3a39;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+ p {
+  text-align: left;
+  font-size: 14px;
+ }
+
+ width: 300px;
+ height: 250px;
+ }
 `
