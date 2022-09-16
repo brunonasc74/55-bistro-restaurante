@@ -79,28 +79,6 @@ const BoxForm = () => {
       </FormContainer>
     </RightContainer>
     // </Container>
-
-          // <RightContainer>
-          //   <div className="formContainer">
-          //   <form onSubmit={handleSubmit}>
-          //     <div className="imgContainer">
-          //       <img src="./public/images/restaurant.jpg" alt="imagem parte interna de um restaurante" />
-          //     </div>
-
-          //     <div className="formInner">
-          //       <input type="name" className="name" required placeholder="Nome e sobrenome" />
-          //       <div className="dateTime">
-          //         <input type="date" className="date" />
-          //         <input type="time" className="time"/>
-          //       </div>
-
-          //       <button>
-          //         <span>Agendar</span>
-          //       </button>
-          //     </div>
-          //   </form>
-          //   </div>
-          // </RightContainer>
       );
     };
 

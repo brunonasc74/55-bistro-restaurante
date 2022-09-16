@@ -6,7 +6,7 @@ export const RightContainer = styled.div`
   grid-column: 2/3;
   background: url("");
   background-size: cover;
-  margin: -25px 0 0px 600px;
+  margin: -35px 0 0 630px;
   background-repeat: no-repeat;
   position: relative;
 `;
@@ -19,10 +19,12 @@ export const FormContainer = styled.div`
 
   .boxOne input {
     width: 50%;
+    justify-content: space-around;
   }
 
   .boxTwo input {
     width: 50%;
+
   }
 
   input {
@@ -42,8 +44,8 @@ export const ImgContainer = styled.div`
   line-height: 0;
 
   img {
-    max-width: 800px;
-    width: max(55vw, 360px);
+    max-width: 700px;
+    width: max(52vw, 360px);
     height: 220px;
     object-fit: cover;
   }
