@@ -1,6 +1,6 @@
 import React from "react";
 import CardAbout from "../CardAbout";
-import { Container, Title} from "./style";
+import { BoxCards, Container, Title} from "./style";
 
 const About = () => {
   return (
@@ -19,8 +19,29 @@ const About = () => {
           Um dos restaurantes mais bem localizados da cidade, estacionamento
           próprio, alimentos frescos e de qualidade.
         </p>
-
-        <CardAbout/>
+         <BoxCards>
+         <CardAbout
+        number="01"
+        title="Bem localizado"
+        desc="Descrição do motivo por que seu restaurante
+        é o melhor.descrição do motivo por que seu restaurante
+        é o melhor"
+        />
+         <CardAbout
+        number="02"
+        title="O melhor preço"
+        desc="Descrição do motivo por que seu restaurante
+        é o melhor.descrição do motivo por que seu restaurante
+        é o melhor"
+        />
+         <CardAbout
+        number="03"
+        title="Menu"
+        desc="Descrição do motivo por que seu restaurante
+        é o melhor.descrição do motivo por que seu restaurante
+        é o melhor"
+        />
+         </BoxCards>
       </Container>
     </>
   )

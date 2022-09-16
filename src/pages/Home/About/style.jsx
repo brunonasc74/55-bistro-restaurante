@@ -14,12 +14,14 @@ align-items: center;
 @media (max-width: ${({ theme }) => theme.screen.sm}) {
   .p-about {
     width: 30rem;
+    font-size: 16px;
+    padding: 1rem;
   }
 
   @media (max-width: ${({ theme }) => theme.screen.xs}) {
     .p-about {
-    width: 25rem;
-    font-size: 16px;
+    width: 24rem;
+    font-size: 14px;
     padding: 1rem;
   }
   }
@@ -35,6 +37,7 @@ export const Title = styled.div`
 		color: #ff3a39;
 		font-size: 2rem;
 		line-height: 0.1rem;
+    text-transform: capitalize;
 	}
 	h1 {
 		font-weight: normal;
@@ -83,3 +86,13 @@ export const Title = styled.div`
 		}
 	}
 `;
+
+export const BoxCards = styled.div`
+display: flex;
+gap: 2rem;
+
+@media (max-width: ${({ theme }) => theme.screen.xs}) {
+  display: flex;
+  flex-direction: column;
+}
+`

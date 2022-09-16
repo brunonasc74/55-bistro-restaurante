@@ -1,15 +1,12 @@
 import React from 'react'
 import { Card } from './style';
 
-const CardAbout = () => {
+const CardAbout = ({number, title, desc}) => {
   return (
     <Card>
-      <span>01</span>
-      <h4>Bem localizado</h4>
-      <p>Descrição do motivo por que seu restaurante
-        é o melhor.descrição do motivo por que seu restaurante
-        é o melhor.
-      </p>
+      <span>{number}</span>
+      <h4>{title}</h4>
+      <p>{desc}</p>
     </Card>
   )
 }
