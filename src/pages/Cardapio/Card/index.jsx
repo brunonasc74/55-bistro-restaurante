@@ -24,5 +24,4 @@ Card.defaultProps = {
   desc: "Descrição do produto",
 };
 
-
 export default Card;
