@@ -1,32 +1,34 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.section`
-display: flex;
-flex-direction: column;
-align-items: center;
-
-.p-about {
-  width: 40rem;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-@media (max-width: ${({ theme }) => theme.screen.sm}) {
-  .p-about {
-    width: 30rem;
-    font-size: 16px;
-    padding: 1rem;
-  }
-
-  @media (max-width: ${({ theme }) => theme.screen.xs}) {
-    .p-about {
-    width: 24rem;
-    font-size: 14px;
-    padding: 1rem;
-  }
-  }
-}
-`
+export const StyledAbout = styled.section`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+	.p-about {
+		text-align: center;
+		margin-bottom: 3rem;
+		width: 100%;
+	}
+	.flex {
+		display: flex;
+		gap: 25px;
+	}
+	@media (max-width: ${({ theme }) => theme.screen.lg}) {
+		.flex {
+			gap: 15px;
+		}
+	}
+	@media (max-width: 820px) {
+		.flex {
+			flex-direction: column;
+		}
+		.p-about {
+			font-size: 1rem;
+		}
+	}
+`;
 
 export const Title = styled.div`
 	margin-top: 4rem;
@@ -37,7 +39,7 @@ export const Title = styled.div`
 		color: #ff3a39;
 		font-size: 2rem;
 		line-height: 0.1rem;
-    text-transform: capitalize;
+		text-transform: capitalize;
 	}
 	h1 {
 		font-weight: normal;
@@ -86,13 +88,3 @@ export const Title = styled.div`
 		}
 	}
 `;
-
-export const BoxCards = styled.div`
-display: flex;
-gap: 2rem;
-
-@media (max-width: ${({ theme }) => theme.screen.xs}) {
-  display: flex;
-  flex-direction: column;
-}
-`
