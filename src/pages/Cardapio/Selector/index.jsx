@@ -6,47 +6,54 @@ import { MdOutlineFoodBank } from "react-icons/md";
 import { IoFastFood } from "react-icons/io5";
 
 const Selector = () => {
+  return (
+    <StyledSelector>
+      <div className="selector">
+        <div className="selector-item">
+          <i>
+            <BiFoodMenu />
+          </i>
+          <span>Menu</span>
+        </div>
+      </div>
 
-    return (
-        <StyledSelector>
-            <div className="selector">
-                <div className="selector-item">
-                <BiFoodMenu  />
-                    <span>Menu</span>
-                </div>
-            </div>
+      <div className="selector">
+        <div className="selector-item">
+          <i>
+            <MdFoodBank />
+          </i>
+          <span>Entradas</span>
+        </div>
+      </div>
 
-            <div className="selector">
-                <div className="selector-item">
-                <MdFoodBank />
-                    <span>Entradas</span>
-                </div>
-            </div>
+      <div className="selector">
+        <div className="selector-item">
+          <i>
+            <MdOutlineFoodBank />
+          </i>
+          <span>Pratos principais</span>
+        </div>
+      </div>
 
-            <div className="selector">
-                <div className="selector-item">
-                <MdOutlineFoodBank />
-                    <span>Pratos principais</span>
-                </div>
-            </div>
+      <div className="selector">
+        <div className="selector-item">
+          <i>
+            <IoFastFood />
+          </i>
+          <span>Sobremesas</span>
+        </div>
+      </div>
 
-            <div className="selector">
-                <div className="selector-item">
-                <IoFastFood />
-                    <span>Sobremesas</span>
-                </div>
-            </div>
-
-            <div className="selector">
-                <div className="selector-item">
-                <MdOutlineEmojiFoodBeverage />
-                    <span>Bebidas</span>
-                </div>
-            </div>
-
-        </StyledSelector>
-    )
-
-}
+      <div className="selector">
+        <div className="selector-item">
+          <i>
+            <MdOutlineEmojiFoodBeverage />
+          </i>
+          <span>Bebidas</span>
+        </div>
+      </div>
+    </StyledSelector>
+  );
+};
 
 export default Selector;
