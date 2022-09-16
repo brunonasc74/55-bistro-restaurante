@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Container from '../../../components/styles/Container';
 
 export const StyledEvent = styled.section`
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
