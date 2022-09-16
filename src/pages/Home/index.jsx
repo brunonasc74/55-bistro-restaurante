@@ -4,6 +4,7 @@ import GlobalStyles from '../../components/styles/GlobalStyles';
 import Header from './Header';
 import About from './About';
 import Review from './Review';
+import Event from './Event';
 import Recipe from './Recipe';
 import PreFooter from './PreFooter';
 
@@ -15,6 +16,7 @@ const Home = () => {
 				<Header />
 				<About />
 				<Review />
+				<Event />
 				<Recipe />
 				<PreFooter />
 			</>
