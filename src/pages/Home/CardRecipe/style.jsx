@@ -62,6 +62,9 @@ export const StyledCardRecipe = styled.div`
 			display: flex;
 			align-items: center;
 			bottom: 0;
+			.icon {
+				color: #b43131;
+			}
 			p {
 				margin-left: 10px;
 				span {
