@@ -28,6 +28,7 @@ export const FormContainer = styled.div`
   input {
     margin-bottom: 1rem;
     padding: 0.3rem 0.5rem;
+    margin-top: 7px;
     border-radius: 5px;
     background: #342c24;
     outline: 1px solid #dfae67;
