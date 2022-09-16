@@ -1,19 +1,26 @@
 import React from "react";
-import Title from "../../../components/Title";
-import { Container } from "./style";
+import CardAbout from "../CardAbout";
+import { Container, Title} from "./style";
 
 const About = () => {
   return (
     <>
       <Container>
-        <h1>Por que escolher nosso resturante</h1>
-       <Title 
-       
-       />
-        <p>
+      <Title>
+      <h1>Por que escolher</h1>
+			<h3>nosso restaurante</h3>
+			<div className='wrapper'>
+				<div className='square'></div>
+				<div className='square'></div>
+				<div className='square'></div>
+			</div>
+      </Title>
+        <p className='p-about'>
           Um dos restaurantes mais bem localizados da cidade, estacionamento
           próprio, alimentos frescos e de qualidade.
         </p>
+
+        <CardAbout/>
       </Container>
     </>
   );
