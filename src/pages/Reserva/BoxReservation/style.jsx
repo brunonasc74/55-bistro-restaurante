@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Contaiiner = styled.div`
 /* width: 1000px; */
 max-width: 1600px;
-padding: 0 10px;
+padding: 0 5px;
 margin: 0 auto;
 `;
 
