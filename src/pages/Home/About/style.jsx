@@ -6,7 +6,7 @@ flex-direction: column;
 align-items: center;
 
 .p-about {
-  width: rem;
+  width: 50rem;
   text-align: center;
   margin-bottom: 3rem;
 }
