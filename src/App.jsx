@@ -9,7 +9,7 @@ import About from './pages/Home/About';
 function App() {
 	return (
  <div>		
-			{/* <Contato/> */}
+			<Contato/>
 			{/* <CardContato/> */}
 			{/* <SectionTime/> */}
 			{/* <SectionTeam/> */}
