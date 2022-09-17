@@ -3,22 +3,26 @@ import styled from "styled-components";
 export const Section = styled.section`
   margin: 0;
   padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 2rem;
 
   .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: relative;
+    margin-top: 25%;
   }
 
   .box div {
     width: 250px;
-    height: 80px;
+    height: 100px;
     line-height: 80px;
     color: #ff3a39;
     background-color: #fff;
     font-size: 250%;
-    position: absolute;
-    top: 350px;
-    left: 40%;
+    text-align: center;
     text-transform: capitalize;
     animation: moving 8s linear infinite;
     -webkit-animation: moving 8s linear infinite;
@@ -38,9 +42,6 @@ export const Section = styled.section`
     background-color: #fff;
     border-radius: 50%;
     display: block;
-    position: absolute;
-    left: 45%;
-    top: -350px;
   }
 
   .box div:after {
@@ -55,9 +56,6 @@ export const Section = styled.section`
   }
 
   .box p {
-    position: absolute;
-    top: 430px;
-    left: 38%;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -71,12 +69,10 @@ export const Section = styled.section`
   }
 
   button {
-    position: absolute;
-    top: 565px;
-    left: 44%;
     background-color: #ff3a39;
     border: 1px solid  #ff3a39;
     padding: 12px 20px;
+    margin-top: 1rem;
     border-radius: 7px;
     transition: 0.3s;
     color: #fff;
