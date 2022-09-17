@@ -38,15 +38,6 @@ const Selector = () => {
       <a href="#" className="selector">
         <div className="selector-item">
           <i>
-            <IoFastFood />
-          </i>
-          <span>Sobremesas</span>
-        </div>
-      </a>
-
-      <a href="#" className="selector">
-        <div className="selector-item">
-          <i>
             <MdOutlineEmojiFoodBeverage />
           </i>
           <span>Bebidas</span>
