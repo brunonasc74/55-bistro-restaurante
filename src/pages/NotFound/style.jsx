@@ -89,12 +89,6 @@ export const Section = styled.section`
     cursor: pointer;
   }
 
-  button:focus {
-    box-shadow: 0px 0px 0px 5px rgba(20, 87, 244, 0.37),
-      0px 0px 0px 10px rgba(20, 87, 244, 0.38);
-    outline: none;
-  }
-
   @keyframes moving {
     0%,
     100% {
