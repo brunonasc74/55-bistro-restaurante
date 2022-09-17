@@ -1,4 +1,5 @@
 import Title from '../../../components/Title';
+import CardGallery from '../CardGallery';
 import { StyledGallery, StyledContainer } from './style';
 
 const Gallery = () => {
@@ -10,12 +11,12 @@ const Gallery = () => {
 			/>
 			<StyledContainer>
 				<div className='grid'>
-					<img src='./images/gallery/food-galler-img-1.jpg' alt='Comida 1' />
-					<img src='./images/gallery/food-galler-img-2.jpg' alt='Comida 2' />
-					<img src='./images/gallery/food-galler-img-3.jpg' alt='Comida 3' />
-					<img src='./images/gallery/food-galler-img-4.jpg' alt='Comida 4' />
-					<img src='./images/gallery/food-galler-img-5.jpg' alt='Comida 5' />
-					<img src='./images/gallery/food-galler-img-6.jpg' alt='Comida 6' />
+					<CardGallery image={'./images/gallery/food-galler-img-1.jpg'} />
+					<CardGallery image={'./images/gallery/food-galler-img-2.jpg'} />
+					<CardGallery image={'./images/gallery/food-galler-img-3.jpg'} />
+					<CardGallery image={'./images/gallery/food-galler-img-4.jpg'} />
+					<CardGallery image={'./images/gallery/food-galler-img-5.jpg'} />
+					<CardGallery image={'./images/gallery/food-galler-img-6.jpg'} />
 				</div>
 			</StyledContainer>
 		</StyledGallery>
