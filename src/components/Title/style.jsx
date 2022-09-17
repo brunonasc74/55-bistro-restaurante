@@ -56,4 +56,14 @@ export const StyledTitle = styled.div`
 			}
 		}
 	}
+	@media (max-width: ${({ theme }) => theme.screen.xs}) {
+		width: 90%;
+		margin: 100px auto 75px auto;
+		h3 {
+			font-size: 1.5rem;
+		}
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
 `;
