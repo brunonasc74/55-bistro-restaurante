@@ -29,6 +29,9 @@ export const StyledEvent = styled.section`
 			align-items: center;
 		}
 	}
+	@media (max-width: ${({ theme }) => theme.screen.xs}) {
+		margin-top: 70px;
+	}
 `;
 
 export const Title = styled.div`
@@ -76,7 +79,6 @@ export const Title = styled.div`
 			}
 		}
 	}
-
 	@media (max-width: ${({ theme }) => theme.screen.sm}) {
 		h1 {
 			font-size: 3.3rem;
