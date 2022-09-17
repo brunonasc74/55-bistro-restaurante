@@ -4,6 +4,14 @@ export const StyledCard = styled.div`
 
 padding: 0.5rem;
 
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+    }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -12,13 +20,12 @@ padding: 0.5rem;
         width: 350px;
         height: fit-content;
         box-sizing: border-box;
-        border-radius: 15px;
+        border-radius: 18px 18px 10px 10px;
 
     }
 
     .card-image {
         width: 100%;
-        border-radius: 15px;
     }
 
     .card-image img {
@@ -36,6 +43,7 @@ padding: 0.5rem;
     
     .card-desc {
         font-size: 16px;
+        padding: 0.2rem;
     }
 
     .card-np {
@@ -43,4 +51,20 @@ padding: 0.5rem;
         justify-content: space-between;
         font-weight: 700;
     }
+
+    .card-name {
+        margin: 0;
+        height: 25px;
+    }
+
+    .card-price {
+        margin: 0;
+        height: 25px;
+    }
+
+    .card-button {
+        display: flex;
+        margin-left: 5px;
+    }
+
 `
