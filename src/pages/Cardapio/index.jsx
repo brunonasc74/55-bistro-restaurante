@@ -4,6 +4,8 @@ import GlobalStyles from "../../components/styles/GlobalStyles";
 import Card from "./Card";
 import Title from "../../components/Title";
 import Selector from "../Cardapio/Selector";
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
 
 
 
@@ -21,6 +23,7 @@ function Cardapio() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <>
+        <Nav />
         <Title preTitle={"Seleção especial"} mainTitle={"do nosso menu"} />
         <Selector
           icon={
@@ -28,6 +31,7 @@ function Cardapio() {
           }
         />
         <Card />
+        <Footer />
       </>
     </ThemeProvider>
   );
