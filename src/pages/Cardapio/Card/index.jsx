@@ -1,5 +1,6 @@
+import Button from "../Button/style";
 import { StyledCard } from "./style";
-import { Button } from "../Button"
+
 
 const Card = ({ image, name, price, desc }) => {
   return (
@@ -14,7 +15,7 @@ const Card = ({ image, name, price, desc }) => {
             <p className="card-price">{price}</p>
           </div>
           <p className="card-desc">{desc}</p>
-          < Button content={"Adicionar"} />
+          <Button>Adicionar</Button>
         </div>
       </div>
     </StyledCard>
