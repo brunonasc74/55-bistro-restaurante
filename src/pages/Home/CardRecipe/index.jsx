@@ -1,4 +1,4 @@
-import { FaClock, FaLink } from 'react-icons/fa';
+import { FiClock, FiLink } from 'react-icons/fi';
 import { StyledCardRecipe } from './style';
 
 const CardRecipe = ({ imagem, titulo, descricao, tempo }) => {
@@ -8,7 +8,7 @@ const CardRecipe = ({ imagem, titulo, descricao, tempo }) => {
 				<img src={imagem} alt='Receita' />
 				<div className='overlay'>
 					<i>
-						<FaLink />
+						<FiLink />
 					</i>
 				</div>
 			</div>
@@ -16,7 +16,7 @@ const CardRecipe = ({ imagem, titulo, descricao, tempo }) => {
 				<h3>{titulo}</h3>
 				<p>{descricao}</p>
 				<div className='flex'>
-					<FaClock />
+					<FiClock className='icon' />
 					<p>
 						Tempo: <span>{tempo}</span>
 					</p>

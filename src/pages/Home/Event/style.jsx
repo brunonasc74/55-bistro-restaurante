@@ -1,49 +1,47 @@
 import styled from 'styled-components';
 
-export const StyledAbout = styled.section`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 90%;
-	margin: auto;
-	.p-about {
-		text-align: center;
-		margin-bottom: 3rem;
-		width: 100%;
+export const StyledEvent = styled.section`
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('./public/images/event-img.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 100px;
+	padding: 25px 0;
+	.container {
+		width: 95%;
+		margin: auto;
 	}
 	.flex {
-		display: flex;
 		gap: 25px;
+		margin-bottom: 75px;
+		display: flex;
+		justify-content: center;
 	}
-	@media (max-width: ${({ theme }) => theme.screen.lg}) {
+	@media (max-width: 1506px) {
 		.flex {
-			gap: 15px;
+			gap: 10px;
 		}
 	}
-	@media (max-width: 820px) {
+	@media (max-width: 890px) {
 		.flex {
 			flex-direction: column;
-		}
-		.p-about {
-			font-size: 1rem;
+			align-items: center;
 		}
 	}
 `;
 
 export const Title = styled.div`
-	margin-top: 4rem;
-	margin-bottom: 1rem;
+	margin-top: 100px;
+	margin-bottom: 75px;
 	text-align: center;
-	h3 {
-		font-family: 'Dancing Script', cursive;
-		color: #ff3a39;
-		font-size: 2rem;
-		line-height: 0.1rem;
-		text-transform: capitalize;
-	}
 	h1 {
+		font-family: 'Dancing Script', cursive;
+		color: #fff;
+		font-size: 4rem;
+		line-height: 0.1rem;
 		font-weight: normal;
-		font-size: 2rem;
+		margin-bottom: 5.5rem;
 	}
 	.wrapper {
 		display: flex;
@@ -58,10 +56,10 @@ export const Title = styled.div`
 			margin: 0 0.5rem;
 			width: 7rem;
 			height: 2px;
-			background-color: #ff3a39;
+			background-color: #fff;
 		}
 		.square {
-			background-color: #ff3a39;
+			background-color: #fff;
 			transform: rotate(45deg);
 			margin: 0 0.25rem;
 			&:nth-child(1) {
@@ -80,6 +78,10 @@ export const Title = styled.div`
 	}
 
 	@media (max-width: ${({ theme }) => theme.screen.sm}) {
+		h1 {
+			font-size: 3.3rem;
+			margin-bottom: 4rem;
+		}
 		.wrapper {
 			&::after,
 			&::before {

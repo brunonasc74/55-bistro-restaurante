@@ -25,6 +25,7 @@ export const StyledPreFooter = styled.section`
 		transition: 250ms;
 		&:hover {
 			transition: 500ms;
+			border-radius: 2px;
 			background-color: #fff;
 			color: #ff3a39;
 		}
