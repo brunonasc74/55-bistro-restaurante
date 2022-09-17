@@ -21,6 +21,7 @@ padding: 0.5rem;
         height: fit-content;
         box-sizing: border-box;
         border-radius: 18px 18px 10px 10px;
+        
 
     }
 
@@ -65,6 +66,10 @@ padding: 0.5rem;
     .card-button {
         display: flex;
         margin-left: 5px;
+    }
+
+    .btn {
+        transition: 1s;
     }
 
 `

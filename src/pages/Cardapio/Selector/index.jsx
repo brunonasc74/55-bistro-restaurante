@@ -8,50 +8,50 @@ import { IoFastFood } from "react-icons/io5";
 const Selector = () => {
   return (
     <StyledSelector>
-      <div className="selector">
+      <a href="#" className="selector">
         <div className="selector-item">
           <i>
             <BiFoodMenu />
           </i>
           <span>Menu</span>
         </div>
-      </div>
+      </a>
 
-      <div className="selector">
+      <a href="#" className="selector">
         <div className="selector-item">
           <i>
             <MdFoodBank />
           </i>
           <span>Entradas</span>
         </div>
-      </div>
+      </a>
 
-      <div className="selector">
+      <a href="#" className="selector">
         <div className="selector-item">
           <i>
             <MdOutlineFoodBank />
           </i>
           <span>Pratos principais</span>
         </div>
-      </div>
+      </a>
 
-      <div className="selector">
+      <a href="#" className="selector">
         <div className="selector-item">
           <i>
             <IoFastFood />
           </i>
           <span>Sobremesas</span>
         </div>
-      </div>
+      </a>
 
-      <div className="selector">
+      <a href="#" className="selector">
         <div className="selector-item">
           <i>
             <MdOutlineEmojiFoodBeverage />
           </i>
           <span>Bebidas</span>
         </div>
-      </div>
+      </a>
     </StyledSelector>
   );
 };

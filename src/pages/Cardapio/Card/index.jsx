@@ -16,7 +16,7 @@ const Card = ({ image, name, price, desc }) => {
             </div>
             <p className="card-desc">{desc}</p>
             <div className="card-button">
-              <Button>Adicionar</Button>
+              <Button className="btn">Adicionar</Button>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Card = ({ image, name, price, desc }) => {
             </div>
             <p className="card-desc">{desc}</p>
             <div className="card-button">
-              <Button>Adicionar</Button>
+              <Button className="btn">Adicionar</Button>
             </div>
           </div>
         </div>
