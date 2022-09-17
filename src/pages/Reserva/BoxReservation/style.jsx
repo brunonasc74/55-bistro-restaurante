@@ -4,13 +4,13 @@ import styled from "styled-components";
 export const Contaiiner = styled.div`
 /* width: 1000px; */
 /* max-width: 1600px; */
-padding: 7px 10px;
+padding: 0 10px;
 margin: 0 auto;
 `;
 
 
 export const StyledBoxReservation = styled.div`
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 400px;

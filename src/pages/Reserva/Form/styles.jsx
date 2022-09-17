@@ -4,30 +4,39 @@ import styled from "styled-components";
 export const RightContainer = styled.div`
   grid-row: 2/3;
   grid-column: 2/3;
-  background: url("");
+  /* background: url("/public/images/bg1.jpg"); */
   background-size: cover;
   margin: -35px 0 0 630px;
   background-repeat: no-repeat;
   position: relative;
+
+  .background {
+    position: absolute;
+    bottom: -43px;
+    left: -15px;
+  }
 `;
 
 export const FormContainer = styled.div`
   position: absolute;
-  bottom: 15%;
+  bottom: 100%;
   left: -10%;
   background: #342c24;
 
   .boxOne input {
-    width: 50%;
-    justify-content: space-around;
+    width: 49%;
+    margin-left: 5px;
+    height: 35px;
   }
 
   .boxTwo input {
-    width: 50%;
-
+    width: 49%;
+    margin-left: 5px;
+    height: 35px;
   }
 
   input {
+    border: 0;
     margin-bottom: 0.7rem;
     padding: 0.3rem 0.5rem;
     margin-top: 7px;

@@ -28,6 +28,9 @@ const BoxForm = () => {
   return (
     // <Container>
     <RightContainer>
+      <div className="background">
+        <img src="/public/images/bg1.jpg" alt="" />
+      </div>
       <FormContainer>
         <form onSubmit={handleSubmit}>
           <ImgContainer>
@@ -35,36 +38,31 @@ const BoxForm = () => {
           </ImgContainer>
 
           <FormInner>
+            <div className="boxOne">
+              <input
+                id="name"
+                type="text"
+                required
+                placeholder="Nome"
+                {...name}
+              />
 
-          <div className="boxOne">
-            <input
-              id="name"
-              type="text"
-              required
-              placeholder="Nome"
-              {...name}
-            />
+              <input id="cpf" type="text" required placeholder="CPF" {...cpf} />
+            </div>
 
-            <input
-              id="cpf"
-              type="text"
-              required
-              placeholder="CPF"
-              {...cpf}
-            />
-          </div>
+            <div className="boxTwo">
+              <input type="email" required placeholder="Email" {...email} />
 
-          <div className="boxTwo">
-            <input type="email" required placeholder="Email" {...email} />
+              <input
+                type="tel"
+                id="phone"
+                required
+                placeholder="Telefone"
+                {...phone}
+              />
+            </div>
 
-            <input
-              type="tel"
-              id="phone"
-              required
-              placeholder="Telefone" {...phone}
-            />
-          </div>
-
+          
             <DateTime>
               <input type="date" />
               <input type="time" />
@@ -73,13 +71,12 @@ const BoxForm = () => {
             <button>
               <span>Agendar</span>
             </button>
-
-            </FormInner>
+          </FormInner>
         </form>
       </FormContainer>
     </RightContainer>
     // </Container>
-      );
+  );
     };
 
 export default BoxForm;
