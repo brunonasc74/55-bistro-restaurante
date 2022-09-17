@@ -6,7 +6,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-p {
+.p-contato {
   margin-top: 2rem;
   width: 65%;
   text-align: center;
@@ -14,7 +14,7 @@ p {
 
 @media (max-width: ${({ theme }) => theme.screen.sm}) {
 
-p {
+.p-contato {
     margin-top: 1rem;
     font-size: 16px;
     text-align: justify;

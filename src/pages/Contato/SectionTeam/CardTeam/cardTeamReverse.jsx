@@ -15,7 +15,7 @@ const CardTeamReverse = ({ image, name, role, github, linkedin, twitter, text })
         <CardReverse>
           <BoxText>
             <h4>Um pouco sobre mim..</h4>
-            <p>{text}</p>
+            <p className="p-cardteam">{text}</p>
           </BoxText>
           <ContainerCard>
             <div>

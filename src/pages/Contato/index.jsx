@@ -16,9 +16,9 @@ const Contato = () => {
 		 <Animation>
 		 </Animation>
 			</Box>
-			<p>Para que fosse possível realizar esse projeto contamos com um time de profissionais
+			<p className='p-contato'>Para que fosse possível realizar esse projeto contamos com um time de profissionais
          incríveis. Somos um time de desenvolvedores apaixonados por tecnologia.</p>
-				 <SectionTeam />
+			<SectionTeam />
 		 </Container>
 		 </>
     </ThemeProvider>
