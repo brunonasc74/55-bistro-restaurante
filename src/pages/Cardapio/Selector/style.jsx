@@ -6,6 +6,7 @@ export const StyledSelector = styled.div`
   justify-content: center;
   gap: 30px;
   padding: 30px;
+  margin-top: -50px;
 
   .selector {
     display: flex;
@@ -17,6 +18,7 @@ export const StyledSelector = styled.div`
     border-radius: 5px;
     border: 1px solid #ff3a39;
     background-color: #080B10;
+    transition: 0.5s;
   }
 
   .selector-item {
