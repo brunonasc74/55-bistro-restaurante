@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 
 export const Contaiiner = styled.div`
-/* width: 1000px; */
-/* max-width: 1600px; */
 padding: 0 10px;
 margin: 0 auto;
 `;
@@ -53,14 +51,17 @@ export const Description = styled.div`
 
 export const Title = styled.div`
   h1 {
-    font-family: "Architects Daughter", cursive;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 1.2rem;
     font-size: 1.8rem;
+    /* color:#FF3A39; */
   }
 
   h2 {
-    color: whitesmoke;
-    font-size: 2rem;
+    color: #FFFF;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
+    color:#FF3A39;
+    font-family: 'Dancing Script', cursive;
   }
 `;

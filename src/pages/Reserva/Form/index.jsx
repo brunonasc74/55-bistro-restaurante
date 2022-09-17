@@ -5,7 +5,6 @@ import {
   RightContainer,
   ImgContainer,
   FormInner,
-  DateTime,
   FormContainer
 } from "./styles";
 
@@ -28,9 +27,9 @@ const BoxForm = () => {
   return (
     // <Container>
     <RightContainer>
-      <div className="background">
+      {/* <div className="background">
         <img src="/public/images/bg1.jpg" alt="" />
-      </div>
+      </div> */}
       <FormContainer>
         <form onSubmit={handleSubmit}>
           <ImgContainer>
@@ -62,15 +61,16 @@ const BoxForm = () => {
               />
             </div>
 
-          
-            <DateTime>
+
+            <div className="DateTime">
               <input type="date" />
-              <input type="time" />
-            </DateTime>
+              <input className="Time" type="time" />
+              </div>
 
             <button>
               <span>Agendar</span>
             </button>
+            
           </FormInner>
         </form>
       </FormContainer>
