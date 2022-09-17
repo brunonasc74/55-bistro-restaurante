@@ -1,25 +1,28 @@
 import React from 'react';
 // import Container from '../../../components/styles/Container';
-import { Description, LeftContainer, StyledBoxReservation, Title, Contaiiner } from './style';
+import { StyledBoxReservation } from './style';
 
 const BoxReservation = () => {
   return (
-    <Contaiiner>
-      <StyledBoxReservation>
-        <LeftContainer>
-          <Description>
-            <Title>
+
+    <StyledBoxReservation>
+      <div className="container">
+      <div className="inner">
+        <div className="leftContainer">
+          <div className="description">
+            <div className="title">
               <h1>Reserva</h1>
-              <h2>Tenha um encontro romântico</h2>
-            </Title>
+              <h2>Make a Romantic Atmosphere Here</h2>
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
               tempore eius suscipit fugit nam?
             </p>
-          </Description>
-        </LeftContainer>
-      </StyledBoxReservation>
-    </Contaiiner>
+          </div>
+        </div>
+        </div>
+        </div>
+        </StyledBoxReservation>
   );
 };
 

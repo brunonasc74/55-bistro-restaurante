@@ -25,7 +25,7 @@ const BoxForm = () => {
   }
 
   return (
-    // <Container>
+    
     <RightContainer>
       {/* <div className="background">
         <img src="/public/images/bg1.jpg" alt="" />
@@ -65,7 +65,7 @@ const BoxForm = () => {
             <div className="DateTime">
               <input type="date" />
               <input className="Time" type="time" />
-              </div>
+            </div>
 
             <button>
               <span>Agendar</span>
