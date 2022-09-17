@@ -58,7 +58,7 @@ export const StyledTitle = styled.div`
 	}
 	@media (max-width: ${({ theme }) => theme.screen.xs}) {
 		width: 90%;
-		margin: 100px auto 75px auto;
+		margin: 75px auto 50px auto;
 		h3 {
 			font-size: 1.5rem;
 		}
