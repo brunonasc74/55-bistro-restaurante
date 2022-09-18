@@ -1,10 +1,12 @@
-import React from "react";
+import GlobalStyles from "../../components/styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import theme from "../../theme";
-import GlobalStyles from "../../components/styles/GlobalStyles";
 import { Section } from "./style";
+import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
@@ -15,7 +17,7 @@ const NotFound = () => {
             <p>
               <span>error 404 !</span> Ops, essa página não existe!
             </p>
-            <button>Volte para home</button>
+            <button onClick={() => navigate('/')}>Volte para home</button>
           </div>
         </Section>
       </>
