@@ -1,8 +1,18 @@
+import React, { useState } from 'react';
+import { MdClose } from 'react-icons/md';
 import Title from '../../../components/Title';
-import CardGallery from '../CardGallery';
 import { StyledGallery, StyledContainer } from './style';
+import data from './data';
 
 const Gallery = () => {
+	const [model, setModel] = useState(false);
+	const [tempImgSrc, setTempImgSrc] = useState('');
+
+	const getImg = (imgSrc) => {
+		setTempImgSrc(imgSrc);
+		setModel(true);
+	};
+
 	return (
 		<StyledGallery>
 			<Title
@@ -10,13 +20,22 @@ const Gallery = () => {
 				mainTitle={'Conheça a nossa história'}
 			/>
 			<StyledContainer>
+				<div className={model ? 'model open' : 'model'}>
+					<img src={tempImgSrc} />
+					<MdClose className='icon' onClick={() => setModel(false)} />
+				</div>
 				<div className='grid'>
-					<CardGallery image={'./images/gallery/food-galler-img-1.jpg'} />
-					<CardGallery image={'./images/gallery/food-galler-img-2.jpg'} />
-					<CardGallery image={'./images/gallery/food-galler-img-3.jpg'} />
-					<CardGallery image={'./images/gallery/food-galler-img-4.jpg'} />
-					<CardGallery image={'./images/gallery/food-galler-img-5.jpg'} />
-					<CardGallery image={'./images/gallery/food-galler-img-6.jpg'} />
+					{data.map((item, index) => {
+						return (
+							<div
+								className='pics'
+								key={index}
+								onClick={() => getImg(item.imgSrc)}
+							>
+								<img src={item.imgSrc} />
+							</div>
+						);
+					})}
 				</div>
 			</StyledContainer>
 		</StyledGallery>
