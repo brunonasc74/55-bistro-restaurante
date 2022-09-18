@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../../theme';
 import GlobalStyles from '../../components/styles/GlobalStyles';
 import { Animation, Container, Box} from './style';
+import SectionTeam from './SectionTeam';
 
 const Contato = () => {
 	return (
@@ -15,8 +16,9 @@ const Contato = () => {
 		 <Animation>
 		 </Animation>
 			</Box>
-			<p>Para que fosse possível realizar esse projeto contamos com um time de profissionais
+			<p className='p-contato'>Para que fosse possível realizar esse projeto contamos com um time de profissionais
          incríveis. Somos um time de desenvolvedores apaixonados por tecnologia.</p>
+			<SectionTeam />
 		 </Container>
 		 </>
     </ThemeProvider>

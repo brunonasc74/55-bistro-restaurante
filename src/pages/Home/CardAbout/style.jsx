@@ -22,16 +22,17 @@ export const Card = styled.div`
 		color: #fff;
 	}
 
-	p {
+	.p-cardabout {
 		text-align: left;
 		font-size: 16px;
+		width:90%;
 	}
 
 	@media (max-width: ${({ theme }) => theme.screen.lg}) {
 		h4 {
 			font-size: 22px;
 		}
-		p {
+		.p-cardabout {
 			font-size: 16px;
 		}
 	}

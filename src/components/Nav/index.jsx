@@ -1,42 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Container } from './styleNav';
-import {BsMoon, BsSun} from 'react-icons/bs';
+import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Container } from "./styleNav";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 const Nav = () => {
-	return <nav>
-			
-			<Container>
-				{/* <Link to='/'>+55 <span>Bistrô</span></Link> */}
-				<a href="/." className="logo"><h5>+55 <span>Bistrô</span></h5></a>
+  return (
+    <nav>
+      <Container>
+        <Link to="/" className="logo">
+          <h5>
+            +55 <span>Bistrô</span>
+          </h5>
+        </Link>
+        <ul>
+          <Link to="/">Home</Link>
+          <li>
+            <Link to="/reserva">Reservas</Link>
+          </li>
+          <li>
+            <Link to="/cardapio">Cardápio</Link>
+          </li>
+          <li>
+            <Link to="/contato">Contato</Link>
+          </li>
+        </ul>
+        <div className="inc">
+          <BsSun />
+        </div>
+      </Container>
+    </nav>
+  );
 
-			<ul>
-				<li>
-					<a href="">Home</a>
-					{/* <Link to="/"></Link> */}
-					</li>
-				<li>
-					<a href="">Reservas</a>
-					{/* <Link to="/reservas"></Link> */}
-				</li>
-				<li>
-					<a href="">Cardápio</a>
-					{/* <Link to="/cardapio"></Link> */}
-				</li>
-				<li>
-					<a href="">Contato</a>
-					{/* <Link to="/Contato"></Link> */}
-				</li>
-			</ul>
-
-			<div className="inc">
-
-				<BsSun />
-
-			</div>
-			</Container>
-
-		</nav>;
-};
 
 export default Nav;
