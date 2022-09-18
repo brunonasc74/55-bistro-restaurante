@@ -8,6 +8,9 @@ export const RightContainer = styled.div`
   margin: -25px 0 0 630px;
   background-repeat: no-repeat;
   position: relative;
+  @media screen and (max-width: 700px) {
+  background: none;
+    }
 
   /* .background {
     position: absolute;
@@ -21,12 +24,13 @@ export const FormContainer = styled.div`
   bottom: 100%;
   left: -10%;
   background: #080B10;
-
-  form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  @media screen and (max-width: 700px) {
+            position: relative;
+            bottom: unset;
+            left: unset;
   }
+
+  
 
   .boxOne input {
     width: 49.5%;
@@ -64,12 +68,18 @@ export const ImgContainer = styled.div`
     height: 220px;
     object-fit: cover;
   }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    height: 250px;
+  }
 `;
 
 export const FormInner = styled.div`
   margin-bottom: 1rem;
   padding: 0.3rem 0.5rem;
-  
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
   .DateTime {
     margin-left: 3px;
   }

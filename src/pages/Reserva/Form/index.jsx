@@ -2,10 +2,7 @@ import React from "react";
 // import Container from "../../../components/styles/Container";
 import useForm from "./useForm";
 import {
-  RightContainer,
-  ImgContainer,
-  FormInner,
-  FormContainer
+  
 } from "./styles";
 
 const BoxForm = () => {
@@ -25,57 +22,80 @@ const BoxForm = () => {
   }
 
   return (
-    
-    <RightContainer>
-      {/* <div className="background">
-        <img src="/public/images/bg1.jpg" alt="" />
-      </div> */}
-      <FormContainer>
-        <form onSubmit={handleSubmit}>
-          <ImgContainer>
-            <img src="./public/images/restaurant.jpg" alt="restaurant" />
-          </ImgContainer>
+    <StyledBoxForm>
+    <div className="rightContainer">
+          <div className="formContainer">
+            <form onSubmit={handleSubmit}>
+              <div className="imgContainer">
+                <img src="/public/images/restaurant.jpg" alt="restaurant" />
+              </div>
+              <div className="formInner">
+                <input type="name" className="styles.name" placeholder="Nome" />
+                <div className="dateTime">
+                  <input type="date" className="date" />
+                  <input type="time" className="styles.time" />
+                </div>
+                <button>
+                  <span>Book Now</span>
+                  {/* <BsArrowRight /> */}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        </StyledBoxForm>
 
-          <FormInner>
-            <div className="boxOne">
-              <input
-                id="name"
-                type="text"
-                required
-                placeholder="Nome"
-                {...name}
-              />
+        
+    // <RightContainer>
+    //   {/* <div className="background">
+    //     <img src="/public/images/bg1.jpg" alt="" />
+    //   </div> */}
+    //   <FormContainer>
+    //     <form onSubmit={handleSubmit}>
+    //       <ImgContainer>
+    //         <img src="./public/images/restaurant.jpg" alt="restaurant" />
+    //       </ImgContainer>
 
-              <input id="cpf" type="text" required placeholder="CPF" {...cpf} />
-            </div>
+    //       <FormInner>
+    //         <div className="boxOne">
+    //           <input
+    //             id="name"
+    //             type="text"
+    //             required
+    //             placeholder="Nome"
+    //             {...name}
+    //           />
 
-            <div className="boxTwo">
-              <input type="email" required placeholder="Email" {...email} />
+    //           <input id="cpf" type="text" required placeholder="CPF" {...cpf} />
+    //         </div>
 
-              <input
-                type="tel"
-                id="phone"
-                required
-                placeholder="Telefone"
-                {...phone}
-              />
-            </div>
+    //         <div className="boxTwo">
+    //           <input type="email" required placeholder="Email" {...email} />
+
+    //           <input
+    //             type="tel"
+    //             id="phone"
+    //             required
+    //             placeholder="Telefone"
+    //             {...phone}
+    //           />
+    //         </div>
 
 
-            <div className="DateTime">
-              <input type="date" />
-              <input className="Time" type="time" />
-            </div>
+    //         <div className="DateTime">
+    //           <input type="date" />
+    //           <input className="Time" type="time" />
+    //         </div>
 
-            <button>
-              <span>Agendar</span>
-            </button>
+    //         <button>
+    //           <span>Agendar</span>
+    //         </button>
             
-          </FormInner>
-        </form>
-      </FormContainer>
-    </RightContainer>
-    // </Container>
+    //       </FormInner>
+    //     </form>
+    //   </FormContainer>
+    // </RightContainer>
+    // // </Container>
   );
     };
 
