@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledEvent = styled.section`
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url('./public/images/event-img.jpg');
+		url('./images/event-img.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
