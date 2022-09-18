@@ -1,5 +1,4 @@
 import React from 'react';
-// import Container from '../../../components/styles/Container';
 import { StyledBoxReservation } from './style';
 
 const BoxReservation = () => {

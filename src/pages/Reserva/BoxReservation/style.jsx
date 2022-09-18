@@ -10,7 +10,7 @@ export const StyledBoxReservation = styled.div`
   }
 
   .inner {
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 400px;
