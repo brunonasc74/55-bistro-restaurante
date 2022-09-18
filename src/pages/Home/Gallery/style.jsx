@@ -35,16 +35,26 @@ export const StyledGallery = styled.section`
 			width: 2.2rem;
 			height: 2.2rem;
 			cursor: pointer;
+			&:hover {
+				color: #ec4646;
+			}
+			&:active {
+				color: transparent;
+			}
 		}
 		.arrows {
 			margin-top: 20px;
 			display: flex;
 			justify-content: space-between;
 			width: 200px;
+			color: #cfcfcf;
 			.arrow {
 				width: 50px;
 				height: 50px;
 				cursor: pointer;
+				&:hover {
+					color: #ffffff;
+				}
 			}
 		}
 	}

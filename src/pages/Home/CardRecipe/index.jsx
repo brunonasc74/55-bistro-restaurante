@@ -27,7 +27,7 @@ const CardRecipe = ({ imagem, titulo, descricao, tempo }) => {
 };
 
 CardRecipe.defaultProps = {
-	imagem: './public/images/recipes/1.jpg',
+	imagem: './images/recipes/1.jpg',
 	titulo: 'Comida',
 	descricao: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nihil
 	omnis cumque placeat repellat ipsa, itaque quasi reiciendis laborum

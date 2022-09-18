@@ -24,7 +24,7 @@ const CardReview = ({ foto, nomeCliente, cargo, descricao }) => {
 };
 
 CardReview.defaultProps = {
-	foto: './public/images/reviews/1.jpg',
+	foto: './images/reviews/1.jpg',
 	nomeCliente: 'Nome do Cliente',
 	cargo: 'Cargo',
 	descricao:
