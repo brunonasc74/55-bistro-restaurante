@@ -6,7 +6,7 @@ const CardAbout = ({number, title, desc}) => {
     <Card>
       <span>{number}</span>
       <h4>{title}</h4>
-      <p>{desc}</p>
+      <p className='p-cardabout'>{desc}</p>
     </Card>
   )
 }
