@@ -6,17 +6,22 @@ import Cardapio from "./pages/Cardapio";
 import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import CardTeam from "./pages/Contato/SectionTeam/CardTeam";
-import SectionTeam from "./pages/Contato/SectionTeam";
 
 
 function App() {
   return (
     <div>
-			{/* <Nav /> */}
-	    {/* <Contato/> */}
-			<Contato/>
-      {/* <Footer />    */}
+			<Router>
+			<Nav />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/reserva" element={<Reserva />} />
+					<Route path="/cardapio" element={<Cardapio />} />
+					<Route path="/contato" element={<Contato />} />
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+      <Footer />   
+			</Router>
     </div>
   )
 	}
