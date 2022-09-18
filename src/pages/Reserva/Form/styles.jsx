@@ -40,7 +40,7 @@ export const StyledBoxForm = styled.div`
           }
         }
         .formInner {
-          background: #080B10;
+          background: #080b10;
           padding: 1.4rem;
           @media screen and (max-width: 700px) {
             width: 100%;
@@ -94,10 +94,12 @@ export const StyledBoxForm = styled.div`
             cursor: pointer;
             transition: all ease-in-out 250ms;
             &:hover {
-              background: #111419;
+              overflow: hidden;
+              -webkit-transform: scale(1.1);
+              transform: scale(1.1);
               span {
-                color: #ff3a39;
-              } 
+                color: #ffffff;
+              }
             }
           }
         }
