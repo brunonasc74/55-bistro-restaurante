@@ -2,7 +2,7 @@ import React from "react";
 // import Container from "../../../components/styles/Container";
 import useForm from "./useForm";
 import {
-  
+  StyledBoxForm
 } from "./styles";
 
 const BoxForm = () => {
@@ -30,13 +30,23 @@ const BoxForm = () => {
                 <img src="/public/images/restaurant.jpg" alt="restaurant" />
               </div>
               <div className="formInner">
-                <input type="name" className="styles.name" placeholder="Nome" />
-                <div className="dateTime">
-                  <input type="date" className="date" />
-                  <input type="time" className="styles.time" />
+
+                <div className="Box">
+                  
+                <input className="name" type="name" required placeholder="Nome" {...name} />
+                <input className="cpf" type="text" required placeholder="CPF" {...cpf} />
+
+                <input className="email" type="email" required placeholder="Email" {...email} />
+                <input className="phone" type="tel" required placeholder="Telefone" {...phone} />
                 </div>
+
+                <div className="dateTime">
+                  <input className="date" type="date" />
+                  <input className="time" type="time" />
+                </div>
+
                 <button>
-                  <span>Book Now</span>
+                  <span>Agendar</span>
                   {/* <BsArrowRight /> */}
                 </button>
               </div>
@@ -45,7 +55,7 @@ const BoxForm = () => {
         </div>
         </StyledBoxForm>
 
-        
+
     // <RightContainer>
     //   {/* <div className="background">
     //     <img src="/public/images/bg1.jpg" alt="" />
