@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledEvent = styled.section`
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url('./public/images/event-img.jpg');
+		url('./images/event-img.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -28,6 +28,9 @@ export const StyledEvent = styled.section`
 			flex-direction: column;
 			align-items: center;
 		}
+	}
+	@media (max-width: ${({ theme }) => theme.screen.xs}) {
+		margin-top: 70px;
 	}
 `;
 
@@ -76,7 +79,6 @@ export const Title = styled.div`
 			}
 		}
 	}
-
 	@media (max-width: ${({ theme }) => theme.screen.sm}) {
 		h1 {
 			font-size: 3.3rem;

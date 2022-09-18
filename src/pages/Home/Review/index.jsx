@@ -27,7 +27,7 @@ const Review = () => {
 					easing={'cubic-bezier(0, 0.55, 0.45, 1)'}
 				>
 					<CardReview
-						foto={'./public/images/reviews/maguinho.png'}
+						foto={'./images/reviews/maguinho.png'}
 						nomeCliente={'Magnus'}
 						cargo={'Mestre das artes de TI'}
 						descricao={`Achei a comida muito poggers, não teve aquela demora que acho omegalul total, 
