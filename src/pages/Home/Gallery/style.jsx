@@ -9,27 +9,43 @@ export const StyledGallery = styled.section`
 		top: 0;
 		left: 0;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color: #000;
+		background-color: rgba(0, 0, 0, 0.719);
 		transition: visibility 0.3s ease, transform 0.3s ease-in-out;
 		visibility: hidden;
 		opacity: 0;
 		transform: scale(0);
 		z-index: 1;
 		overflow: hidden;
+		img {
+			margin-top: 20px;
+		}
 	}
 	.open {
+		user-select: none;
 		visibility: visible;
 		opacity: 1;
 		transform: scale(1);
-		.icon {
+		.icon-close {
 			position: fixed;
 			top: 20px;
 			right: 20px;
 			width: 2.2rem;
 			height: 2.2rem;
 			cursor: pointer;
+		}
+		.arrows {
+			margin-top: 20px;
+			display: flex;
+			justify-content: space-between;
+			width: 200px;
+			.arrow {
+				width: 50px;
+				height: 50px;
+				cursor: pointer;
+			}
 		}
 	}
 	.grid {
@@ -39,12 +55,11 @@ export const StyledGallery = styled.section`
 		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
 	}
-
 	.pics {
 		cursor: pointer;
 		transition: all 350ms ease;
 		&:hover {
-			filter: opacity(0.5);
+			filter: brightness(0.7);
 		}
 	}
 
@@ -55,7 +70,16 @@ export const StyledGallery = styled.section`
 			gap: 13px;
 		}
 	}
+	@media (max-width: ${({ theme }) => theme.screen.sm}) {
+		.model img {
+			margin-top: 50px;
+		}
+		.open .arrows {
+			margin-top: 50px;
+		}
+	}
 `;
+
 export const StyledContainer = styled(Container)`
 	width: 1300px;
 

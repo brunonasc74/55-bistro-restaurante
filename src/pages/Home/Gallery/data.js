@@ -1,4 +1,4 @@
-let data = [
+const data = [
 	{
 		id: 1,
 		imgSrc: './images/gallery/food-galler-img-1.jpg'
