@@ -2,6 +2,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "../../theme";
 import GlobalStyles from "../../components/styles/GlobalStyles";
 import Card from "./Card";
+import Cart from "./Cart";
 import Title from "../../components/Title";
 import Selector from "../Cardapio/Selector";
 import Nav from "../../components/Nav";
@@ -30,6 +31,7 @@ function Cardapio() {
             "https://i.pinimg.com/originals/94/ee/2f/94ee2fda4931c26b3c55ed23d28e885e.png"
           }
         />
+        <Cart />
         <Card />
         <Footer />
       </>
