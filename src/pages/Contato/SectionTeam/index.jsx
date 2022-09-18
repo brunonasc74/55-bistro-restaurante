@@ -29,7 +29,7 @@ const SectionTeam = () => {
               role="Desenvolvedor(a) Fullstack"
               github="https://github.com/ShiellynFerr"
               linkedin="https://www.linkedin.com/in/shiellyn-ferreira/"
-              text="Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site"
+              text="Essa  pessoa fez o site Essa  pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site"
             />
           </Box>
           <Box>
