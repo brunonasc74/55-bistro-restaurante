@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
 
-// export const Contaiiner = styled.div`
-// padding: 0 10px;
-// margin: 0 auto;
-// `;
-
-
 export const StyledBoxReservation = styled.div`
   .container {
     max-width: 1600px;
@@ -70,7 +64,7 @@ export const StyledBoxReservation = styled.div`
         }
         h2 {
           color: #ff3a39;
-          font-size: 2rem;
+          font-size: 2.3rem;
           margin-bottom: 1rem;
           font-family: "Dancing Script", cursive;
         }
@@ -78,7 +72,7 @@ export const StyledBoxReservation = styled.div`
       p {
         font-size: 1rem;
         max-width: 450px;
-        color: var(--color-text);
+        color: #FFFFFF;
         @media screen and (max-width: 700px) {
           max-width: unset;
         }
