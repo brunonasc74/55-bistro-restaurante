@@ -1,86 +1,76 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #0d0d14;
+	height: 6.5rem;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
 
+	a {
+		text-decoration: none;
+	}
 
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-background-color: #0d0d14;
-height: 6.5rem;
-position: fixed;
-z-index: 1;
-width: 100%;
+	.logo {
+		font-size: 1.6rem;
+		color: #ff3a39;
+	}
 
+	span {
+		color: white;
+	}
 
-a {
-  text-decoration: none;
-}
+	ul {
+		font-size: 1.4rem;
+		list-style: none;
+		display: flex;
+		gap: 2rem;
+		padding: 0;
+		a {
+			color: white;
+		}
 
-.logo{
-  font-size: 1.6rem;
-  color: #ff3a39;
-}
+		@media (max-width: ${({ theme }) => theme.screen.sm}) {
+			display: none;
+		}
+	}
 
-span{
-  color: white;
-}
+	ul a:hover {
+		color: #ff3a39;
+		transition: 0.3s;
+	}
 
-ul {
-  font-size: 1.4rem;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  padding: 0;
-  a{
-    color: white;
-  }
+	.inc {
+		display: flex;
+		font-size: 1.7rem;
+		@media (min-width: ${({ theme }) => theme.screen.sm}) {
+			display: none;
+		}
+	}
 
-  @media (max-width: ${({ theme }) => theme.screen.sm}){
-    display: none;
-  }
-}
+	.inc-dark {
+		display: flex;
+		font-size: 1.6rem;
+	}
 
-ul a:hover {
-  color: #ff3a39;
-  transition: 0.3s;
-}
+	.inc-dark {
+		@media (max-width: ${({ theme }) => theme.screen.sm}) {
+			display: none;
+		}
+	}
+`;
 
-.inc {
-  display: flex;
-  font-size: 1.7rem;
-  @media (min-width: ${({ theme }) => theme.screen.sm}){
-    display: none;
-  }
-}
+export const WraperNavMobile = styled.div`
+	@media (min-width: ${({ theme }) => theme.screen.sm}) {
+		display: none;
+	}
 
-.inc-dark{
-  display: flex;
-  font-size: 1.6rem;
-
-  
-
-
-}
-
-.inc-dark {
-  @media (max-width: ${({ theme }) => theme.screen.sm}){
-    display: none;
-  }
-}
-
-`
-
-export const WraperNavMobile = styled.div `
-  
-  @media (min-width: ${({ theme }) => theme.screen.sm}){
-    display: none;
-  }
-
-  ul{
-    @media (max-width: ${({ theme }) => theme.screen.sm}){
-      display: flex;
-    }
-
-  }
+	ul {
+		@media (max-width: ${({ theme }) => theme.screen.sm}) {
+			display: flex;
+		}
+	}
 `;
