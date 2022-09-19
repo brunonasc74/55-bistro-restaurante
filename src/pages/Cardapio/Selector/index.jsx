@@ -3,6 +3,7 @@ import { MdFoodBank } from "react-icons/md";
 import { BiFoodMenu } from "react-icons/bi";
 import { MdOutlineEmojiFoodBeverage } from "react-icons/md";
 import { MdOutlineFoodBank } from "react-icons/md";
+import { GiWrappedSweet } from "react-icons/gi";
 
 const Selector = () => {
   // const [categoria, setCategoria] = useState("");
@@ -33,6 +34,14 @@ const Selector = () => {
             <MdOutlineFoodBank />
           </i>
           <span>Pratos principais</span>
+        </div>
+      </a>
+      <a href="#" className="selector">
+        <div className="selector-item">
+          <i>
+            <GiWrappedSweet />
+          </i>
+          <span>Sobremesas</span>
         </div>
       </a>
 
