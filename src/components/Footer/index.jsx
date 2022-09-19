@@ -99,7 +99,7 @@ const Footer = () => {
 					</div>
 
 					<div className='footer-bottom flex-row'>
-						<span>Copyright &copy 2022 | Squad 1</span>
+						<span>Copyright &copy; 2022 | Squad 1</span>
 					</div>
 				</Container>
 			</footer>
