@@ -1,39 +1,38 @@
 import React from "react";
+import {useState} from "react";
 import { Link } from "react-router-dom";
 import { Container } from './styleNav';
-import {BsMoon, BsSun} from 'react-icons/bs';
+import {BsMoon, BsSun,} from 'react-icons/bs';
+import Hmenu from "../hamburgerMenu";
+import NavBarHamburger from "../navBarHamburger";
+import LinksMenu from "../linkMenu";
+import {WraperNavMobile} from "./styleNav";
+
+
 
 const Nav = () => {
+	const [active, setMode] = React.useState(false);
 	return <nav>
 			
 			<Container>
-				{/* <Link to='/'>+55 <span>Bistrô</span></Link> */}
 				<a href="/." className="logo"><h5>+55 <span>Bistrô</span></h5></a>
-
-			<ul>
-				<li>
-					<a href="">Home</a>
-					{/* <Link to="/"></Link> */}
-					</li>
-				<li>
-					<a href="">Reservas</a>
-					{/* <Link to="/reservas"></Link> */}
-				</li>
-				<li>
-					<a href="">Cardápio</a>
-					{/* <Link to="/cardapio"></Link> */}
-				</li>
-				<li>
-					<a href="">Contato</a>
-					{/* <Link to="/Contato"></Link> */}
-				</li>
-			</ul>
+			<div className="navDesktop">
+				<LinksMenu />
+			</div>
+			
+			<WraperNavMobile>
+				{active&&<NavBarHamburger/>}
+			</WraperNavMobile>
 
 			<div className="inc">
-
-				<BsSun />
-
+				<Hmenu onClick={()=>{setMode(!active)}} />
 			</div>
+			
+
+			<div className="inc-dark">
+				<BsSun />
+			</div>
+
 			</Container>
 
 		</nav>;

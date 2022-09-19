@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
-
-
 export const Container = styled.div`
 
+
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: center;
 background-color: #0d0d14;
 height: 6.5rem;
+position: fixed;
+z-index: 1;
+width: 100%;
+
 
 a {
   text-decoration: none;
@@ -31,7 +34,10 @@ ul {
   padding: 0;
   a{
     color: white;
-    
+  }
+
+  @media (max-width: ${({ theme }) => theme.screen.sm}){
+    display: none;
   }
 }
 
@@ -40,9 +46,41 @@ ul a:hover {
   transition: 0.3s;
 }
 
-.inc{
+.inc {
+  display: flex;
+  font-size: 1.7rem;
+  @media (min-width: ${({ theme }) => theme.screen.sm}){
+    display: none;
+  }
+}
+
+.inc-dark{
   display: flex;
   font-size: 1.6rem;
+
+  
+
+
+}
+
+.inc-dark {
+  @media (max-width: ${({ theme }) => theme.screen.sm}){
+    display: none;
+  }
 }
 
 `
+
+export const WraperNavMobile = styled.div `
+  
+  @media (min-width: ${({ theme }) => theme.screen.sm}){
+    display: none;
+  }
+
+  ul{
+    @media (max-width: ${({ theme }) => theme.screen.sm}){
+      display: flex;
+    }
+
+  }
+`;
