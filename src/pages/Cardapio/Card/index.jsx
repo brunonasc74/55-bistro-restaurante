@@ -44,11 +44,4 @@ const Card = ({ categoria, all }) => {
   );
 };
 
-Card.defaultProps = {
-  image: "https://via.placeholder.com/150",
-  name: "Nome do produto",
-  price: "R$ 00,00",
-  desc: "Descrição do produto uihsdugfhusid lorem ipsum mjwaksoidmjioamcjf iaosmjfijosiafj",
-};
-
 export default Card;
