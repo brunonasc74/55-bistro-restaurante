@@ -5,9 +5,11 @@ import { MdOutlineEmojiFoodBeverage } from "react-icons/md";
 import { MdOutlineFoodBank } from "react-icons/md";
 
 const Selector = () => {
+  const [categoria, setCategoria] = useState("");
+  
   return (
     <StyledSelector>
-      <a href="#" className="selector">
+      <a href="#" className="selector" onClick={setCategoria('all')}>
         <div className="selector-item">
           <i>
             <BiFoodMenu />
