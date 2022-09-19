@@ -57,6 +57,7 @@ margin-bottom: 50px;
     .card-name {
         margin: 0;
         height: 25px;
+        font-size: 18px;
     }
 
     .card-price {

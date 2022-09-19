@@ -8,16 +8,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 
 
-
 function Cardapio() {
-  // const [food, setFood] = useState([]);
-  // const url = `${aksjmokfl}`
-
-  // const getApi = async () => {
-  //   const response = await fetch(url);
-  //   const data = await response.json();
-  //   setFood(data);
-  // };
 
   return (
     <ThemeProvider theme={theme}>
@@ -30,7 +21,7 @@ function Cardapio() {
             "https://i.pinimg.com/originals/94/ee/2f/94ee2fda4931c26b3c55ed23d28e885e.png"
           }
         />
-        <Card />
+        <Card all />
         <Footer />
       </>
     </ThemeProvider>
