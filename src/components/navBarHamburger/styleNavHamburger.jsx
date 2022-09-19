@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
 
 
-background-color: #0d0d14e6;
+background: rgb(13,13,20);
+background: linear-gradient(180deg, rgba(13,13,20,1) 0%, rgba(13,13,20,0.8155637254901961) 68%, rgba(255,58,57,0.14049369747899154) 100%);
 display: flex;
 position: absolute;
 width: 100%;
