@@ -11,13 +11,11 @@ import PreFooter from './PreFooter';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 
-
 const Home = () => {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyles />
 			<>
-				<Nav/>
 				<Header />
 				<About />
 				<Gallery />
@@ -25,7 +23,6 @@ const Home = () => {
 				<Event />
 				<Recipe />
 				<PreFooter />
-				<Footer />
 			</>
 		</ThemeProvider>
 	);
