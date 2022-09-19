@@ -43,9 +43,14 @@ margin-bottom: 50px;
         padding: 0.4rem;
     }
     
+    .card-f-desc {
+        min-height: 200px;
+    }
+
     .card-desc {
         font-size: 16px;
         padding: 0.2rem;
+        
     }
 
     .card-np {

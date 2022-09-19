@@ -33,7 +33,9 @@ const Card = ({ categoria, all }) => {
                       <p className="card-price">R${item.preco}</p>
                     </div>
                   </div>
-                  <p className="card-desc">{item.descricao}</p>
+                  <div className="card-f-desc">
+                    <p className="card-desc">{item.descricao}</p>
+                  </div>
                 </div>
               </div>
             );
