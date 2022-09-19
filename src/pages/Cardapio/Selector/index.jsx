@@ -3,7 +3,6 @@ import { MdFoodBank } from "react-icons/md";
 import { BiFoodMenu } from "react-icons/bi";
 import { MdOutlineEmojiFoodBeverage } from "react-icons/md";
 import { MdOutlineFoodBank } from "react-icons/md";
-import { IoFastFood } from "react-icons/io5";
 
 const Selector = () => {
   return (

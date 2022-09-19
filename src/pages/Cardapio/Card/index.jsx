@@ -15,9 +15,6 @@ const Card = ({ image, name, price, desc }) => {
               <p className="card-price">{price}</p>
             </div>
             <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
           </div>
         </div>
         <div className="card">
@@ -30,9 +27,6 @@ const Card = ({ image, name, price, desc }) => {
               <p className="card-price">{price}</p>
             </div>
             <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
           </div>
         </div>
         <div className="card">
@@ -45,9 +39,6 @@ const Card = ({ image, name, price, desc }) => {
               <p className="card-price">{price}</p>
             </div>
             <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
           </div>
         </div>
         <div className="card">
@@ -60,9 +51,6 @@ const Card = ({ image, name, price, desc }) => {
               <p className="card-price">{price}</p>
             </div>
             <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
           </div>
         </div>
         <div className="card">
@@ -75,9 +63,6 @@ const Card = ({ image, name, price, desc }) => {
               <p className="card-price">{price}</p>
             </div>
             <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
           </div>
         </div>
         <div className="card">
@@ -90,9 +75,6 @@ const Card = ({ image, name, price, desc }) => {
               <p className="card-price">{price}</p>
             </div>
             <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledCard = styled.div`
 
 padding: 0.5rem;
+margin-bottom: 50px;
 
     section {
         display: flex;
@@ -61,15 +62,7 @@ padding: 0.5rem;
     .card-price {
         margin: 0;
         height: 25px;
-    }
-
-    .card-button {
-        display: flex;
-        margin-left: 5px;
-    }
-
-    .btn {
-        transition: 1s;
+        color: #ff3a39;
     }
 
 `
