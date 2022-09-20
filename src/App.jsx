@@ -5,23 +5,60 @@ import Reserva from './pages/Reserva';
 import Cardapio from './pages/Cardapio';
 import Contato from './pages/Contato';
 import NotFound from './pages/NotFound';
+import Admin from './pages/Admin';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
 	return (
 		<div>
 			<Router>
-				<Nav />
 				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/reserva' element={<Reserva />} />
-					<Route path='/cardapio' element={<Cardapio />} />
-					<Route path='/contato' element={<Contato />} />
+					<Route
+						path='/'
+						element={
+							<>
+								<Nav />
+								<Home />
+								<Footer />
+							</>
+						}
+					/>
+					<Route
+						path='/reserva'
+						element={
+							<>
+								<Nav />
+								<Reserva />
+								<Footer />
+							</>
+						}
+					/>
+					<Route
+						path='/cardapio'
+						element={
+							<>
+								<Nav />
+								<Cardapio />
+								<Footer />
+							</>
+						}
+					/>
+					<Route
+						path='/contato'
+						element={
+							<>
+								<Nav />
+								<Contato />
+								<Footer />
+							</>
+						}
+					/>
+					<Route path='/admin' element={<Admin />} />
 					<Route path='*' element={<NotFound />} />
 				</Routes>
-				<Footer />
 			</Router>
 		</div>
 	);
 }
+
 export default App;
