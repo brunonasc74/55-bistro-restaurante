@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
 			<Router>
-			<Nav />
+			{/* <Nav /> */}
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/reserva" element={<Reserva />} />
@@ -20,7 +20,7 @@ function App() {
 					<Route path="/contato" element={<Contato />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
-      <Footer />   
+      {/* <Footer />    */}
 			</Router>
     </div>
   )
