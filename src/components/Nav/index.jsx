@@ -1,42 +1,48 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { useState } from 'react';
 import { Container } from './styleNav';
-import {BsMoon, BsSun} from 'react-icons/bs';
+import { BsMoon, BsSun } from 'react-icons/bs';
+import Hmenu from '../hamburgerMenu';
+import NavBarHamburger from '../navBarHamburger';
+import LinksMenu from '../linkMenu';
+import { WraperNavMobile } from './styleNav';
+import { ThemeProvider } from 'styled-components';
+import theme from '../../theme';
 
 const Nav = () => {
-	return <nav>
-			
-			<Container>
-				{/* <Link to='/'>+55 <span>Bistrô</span></Link> */}
-				<a href="/." className="logo"><h5>+55 <span>Bistrô</span></h5></a>
+	const [active, setMode] = useState(false);
+	return (
+		<ThemeProvider theme={theme}>
+			<>
+				<nav>
+					<Container>
+						<a href='/.' className='logo'>
+							<h5>
+								+55 <span>Bistrô</span>
+							</h5>
+						</a>
+						<div className='navDesktop'>
+							<LinksMenu />
+						</div>
 
-			<ul>
-				<li>
-					<a href="">Home</a>
-					{/* <Link to="/"></Link> */}
-					</li>
-				<li>
-					<a href="">Reservas</a>
-					{/* <Link to="/reservas"></Link> */}
-				</li>
-				<li>
-					<a href="">Cardápio</a>
-					{/* <Link to="/cardapio"></Link> */}
-				</li>
-				<li>
-					<a href="">Contato</a>
-					{/* <Link to="/Contato"></Link> */}
-				</li>
-			</ul>
+						<WraperNavMobile>{active && <NavBarHamburger />}</WraperNavMobile>
 
-			<div className="inc">
+						<div className='inc'>
+							<Hmenu
+								onClick={() => {
+									setMode(!active);
+								}}
+							/>
+						</div>
 
-				<BsSun />
-
-			</div>
-			</Container>
-
-		</nav>;
+						<div className='inc-dark'>
+							<BsSun />
+						</div>
+					</Container>
+				</nav>
+			</>
+		</ThemeProvider>
+	);
 };
 
 export default Nav;

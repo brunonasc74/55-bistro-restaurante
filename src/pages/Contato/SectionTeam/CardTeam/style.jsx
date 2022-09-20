@@ -83,7 +83,7 @@ h4 {
   color: #FF3A39;
 }
 
-p {
+.p-cardteam {
   font-size: 1.1rem;
   color: #fff;
 }
@@ -99,8 +99,8 @@ h4 {
   color: #FF3A39;
 }
 
-p {
-  font-size: 14px;
+.p-cardteam {
+  font-size: 12px;
   color: #fff;
 }
 
@@ -115,7 +115,7 @@ h4 {
   color: #FF3A39;
 }
 
-p {
+.p-cardteam {
   font-size: 14px;
   color: #fff;
 }
@@ -130,7 +130,7 @@ p {
   color: #FF3A39;
 }
 
-p {
+.p-cardteam {
   font-size: 12px;
   color: #fff;
 }
