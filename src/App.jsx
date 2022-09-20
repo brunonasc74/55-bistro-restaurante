@@ -7,7 +7,6 @@ import Contato from './pages/Contato';
 import NotFound from './pages/NotFound';
 import Card from './pages/Cardapio/Card';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SectionTeam from './pages/Contato/SectionTeam';
 
 function App() {
 	return (
