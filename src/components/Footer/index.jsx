@@ -52,7 +52,7 @@ const Footer = () => {
 								<BsTelephone /> +55 (38)4002-8922
 							</p>
 							<p className='descricao'>
-								<MdMailOutline /> 55bistroMG@bistro.com.br
+								<MdMailOutline /> 55bistro@bistro.com.br
 							</p>
 						</div>
 
@@ -91,10 +91,10 @@ const Footer = () => {
 						</div>
 						<div className='flex-col coluna4'>
 							<h4 className='titulo'>Mais Informações</h4>
-							<a href='#'>Menu</a>
-							<a href='#'>Cardápio</a>
-							<a href='#'>Reservas</a>
-							<a href='#'>Equipe</a>
+							<a href=''>Início</a>
+							<a href='/reserva'>Reservas</a>
+							<a href='/cardapio/menu'>Cardápio</a>
+							<a href='contato'>Equipe</a>
 						</div>
 					</div>
 
