@@ -1,34 +1,47 @@
 import React from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { useState } from 'react';
 import { Container } from './styleNav';
 import { BsMoon, BsSun } from 'react-icons/bs';
+import Hmenu from '../hamburgerMenu';
+import NavBarHamburger from '../navBarHamburger';
+import LinksMenu from '../linkMenu';
+import { WraperNavMobile } from './styleNav';
+import { ThemeProvider } from 'styled-components';
+import theme from '../../theme';
 
 const Nav = () => {
+	const [active, setMode] = useState(false);
 	return (
-		<nav>
-			<Container>
-				<Link to='/' className='logo'>
-					<h5>
-						+55 <span>Bistrô</span>
-					</h5>
-				</Link>
-				<ul>
-					<Link to='/'>Home</Link>
-					<li>
-						<Link to='/reserva'>Reservas</Link>
-					</li>
-					<li>
-						<Link to='/cardapio'>Cardápio</Link>
-					</li>
-					<li>
-						<Link to='/contato'>Contato</Link>
-					</li>
-				</ul>
-				<div className='inc'>
-					<BsSun />
-				</div>
-			</Container>
-		</nav>
+		<ThemeProvider theme={theme}>
+			<>
+				<nav>
+					<Container>
+						<a href='/.' className='logo'>
+							<h5>
+								+55 <span>Bistrô</span>
+							</h5>
+						</a>
+						<div className='navDesktop'>
+							<LinksMenu />
+						</div>
+
+						<WraperNavMobile>{active && <NavBarHamburger />}</WraperNavMobile>
+
+						<div className='inc'>
+							<Hmenu
+								onClick={() => {
+									setMode(!active);
+								}}
+							/>
+						</div>
+
+						<div className='inc-dark'>
+							<BsSun />
+						</div>
+					</Container>
+				</nav>
+			</>
+		</ThemeProvider>
 	);
 };
 

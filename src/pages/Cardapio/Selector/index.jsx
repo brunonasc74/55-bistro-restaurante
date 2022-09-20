@@ -2,48 +2,52 @@ import { StyledSelector } from "./style";
 import { MdFoodBank } from "react-icons/md";
 import { BiFoodMenu } from "react-icons/bi";
 import { MdOutlineEmojiFoodBeverage } from "react-icons/md";
-import { MdOutlineFoodBank } from "react-icons/md";
-import { IoFastFood } from "react-icons/io5";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { GiWrappedSweet } from "react-icons/gi";
+import { Link, Outlet } from "react-router-dom";
 
 const Selector = () => {
+  // const [categoria, setCategoria] = useState("");
+  // onClick={setCategoria('all')}
   return (
     <StyledSelector>
-      <a href="#" className="selector">
+      <Link to="menu" className="selector">
         <div className="selector-item">
           <i>
             <BiFoodMenu />
           </i>
           <span>Menu</span>
         </div>
-      </a>
+      </Link>
 
-      <a href="#" className="selector">
+      <Link to="regioes" className="selector">
         <div className="selector-item">
           <i>
-            <MdFoodBank />
+            <FaMapMarkerAlt />
           </i>
-          <span>Entradas</span>
+          <span>Regionais</span>
         </div>
-      </a>
+      </Link>
 
-      <a href="#" className="selector">
+      <Link to="sobremesas" className="selector">
         <div className="selector-item">
           <i>
-            <MdOutlineFoodBank />
+            <GiWrappedSweet />
           </i>
-          <span>Pratos principais</span>
+          <span>Sobremesas</span>
         </div>
-      </a>
+      </Link>
 
-      <a href="#" className="selector">
+      <Link to="bebidas" className="selector">
         <div className="selector-item">
           <i>
             <MdOutlineEmojiFoodBeverage />
           </i>
           <span>Bebidas</span>
         </div>
-      </a>
-    </StyledSelector>
+      </Link>
+      <Outlet />
+    </StyledSelector >
   );
 };
 

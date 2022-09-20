@@ -1,48 +1,76 @@
-import styled from "styled-components";
-
-
+import styled from 'styled-components';
 
 export const Container = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #0d0d14;
+	height: 6.5rem;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
 
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: #0d0d14;
-height: 6.5rem;
+	a {
+		text-decoration: none;
+	}
 
-a {
-  text-decoration: none;
-}
+	.logo {
+		font-size: 1.6rem;
+		color: #ff3a39;
+	}
 
-.logo{
-  font-size: 1.6rem;
-  color: #ff3a39;
-}
+	span {
+		color: white;
+	}
 
-span{
-  color: white;
-}
+	ul {
+		font-size: 1.4rem;
+		list-style: none;
+		display: flex;
+		gap: 2rem;
+		padding: 0;
+		a {
+			color: white;
+		}
 
-ul {
-  font-size: 1.4rem;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  padding: 0;
-  a{
-    color: white;
-    
-  }
-}
+		@media (max-width: ${({ theme }) => theme.screen.sm}) {
+			display: none;
+		}
+	}
 
-ul a:hover {
-  color: #ff3a39;
-  transition: 0.3s;
-}
+	ul a:hover {
+		color: #ff3a39;
+		transition: 0.3s;
+	}
 
-.inc{
-  display: flex;
-  font-size: 1.6rem;
-}
+	.inc {
+		display: flex;
+		font-size: 1.7rem;
+		@media (min-width: ${({ theme }) => theme.screen.sm}) {
+			display: none;
+		}
+	}
 
-`
+	.inc-dark {
+		display: flex;
+		font-size: 1.6rem;
+	}
+
+	.inc-dark {
+		@media (max-width: ${({ theme }) => theme.screen.sm}) {
+			display: none;
+		}
+	}
+`;
+
+export const WraperNavMobile = styled.div`
+	@media (min-width: ${({ theme }) => theme.screen.sm}) {
+		display: none;
+	}
+
+	ul {
+		@media (max-width: ${({ theme }) => theme.screen.sm}) {
+			display: flex;
+		}
+	}
+`;

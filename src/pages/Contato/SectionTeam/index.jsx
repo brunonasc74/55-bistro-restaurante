@@ -39,7 +39,7 @@ const SectionTeam = () => {
               role="Desenvolvedor(a) Fullstack"
               github="https://github.com/bruxvr"
               linkedin="https://www.linkedin.com/in/brunarxavier/"
-              text="Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site"
+              text="Apaixonada por aprender e por descobrir que ainda há muito a ser aprendido. Sou uma recém entusiasta na tecnologia, e escolher o desenvolvimento web para investir tempo e empenho foi uma das minhas decisões mais acertadas. Tem sido uma das experiências mais incríveis e desafiadoras nessa transição de carreira. Não me arrependo nem por um segundo – em especial quando tenho resultados gratificantes como esse projeto."
             />
           </Box>
           <Box>
