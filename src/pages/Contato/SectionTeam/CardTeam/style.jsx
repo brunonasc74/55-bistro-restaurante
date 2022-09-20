@@ -9,7 +9,7 @@ export const Card = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
-gap: 50px;
+gap: 30px;
 padding: 2rem;
 margin-top: 1rem;
 
@@ -53,7 +53,7 @@ align-items: center;
 background-color: #FF3A39;
 border-radius: 3px;
 width: 280px;
-height: 40px;
+height: 45px;
 margin-top: 1rem;
 
  .icon{
@@ -88,6 +88,7 @@ h4 {
   color: #fff;
 }
 
+
 @media (max-width: ${({ theme }) => theme.screen.sm}) {
   min-width: 500px;
   height: 250px;
@@ -105,6 +106,7 @@ h4 {
 }
 
 @media (max-width: ${({ theme }) => theme.screen.xs}) {
+  padding: 2rem;
   min-width: 380px;
   height: 250px;
   padding: 2rem;
@@ -116,11 +118,12 @@ h4 {
 }
 
 .p-cardteam {
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
 }
 
 @media(max-width: 400px) {
+  padding: 1rem;
   min-width: 280px;
   height: 250px;
   padding: 2rem;
