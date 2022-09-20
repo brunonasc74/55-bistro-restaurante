@@ -9,7 +9,6 @@ align-items: center;
 
 export const Box = styled.div`
 
-
 ` 
 export const BoxReverse = styled.div`
 `

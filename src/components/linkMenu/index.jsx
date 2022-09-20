@@ -12,7 +12,7 @@ const LinksMenu = () => {
 					<Link to='/reserva'>Reservas</Link>
 				</li>
 				<li>
-					<Link to='/cardapio'>Cardápio</Link>
+					<Link to='/cardapio/menu'>Cardápio</Link>
 				</li>
 				<li>
 					<Link to='/contato'>Contato</Link>

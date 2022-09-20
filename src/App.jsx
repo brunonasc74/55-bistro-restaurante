@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import Home from './pages/Home';
@@ -33,16 +34,14 @@ function App() {
 							</>
 						}
 					/>
-					<Route
-						path='/cardapio'
-						element={
-							<>
-								<Nav />
-								<Cardapio />
-								<Footer />
-							</>
-						}
-					/>
+					<Route path="/cardapio/*" element={<><Nav /><Cardapio /><Footer /></>}>
+            			<Route path="menu" element={<Card all rota="cardapios" />} />
+           				 <Route
+             			 path="sobremesas"
+              			element={<Card all rota="cardapios/categoria/sobremesas" />}
+            				/>
+            			<Route path="bebidas" element={<Card all rota="bebidas" />} />
+          			</Route>
 					<Route
 						path='/contato'
 						element={

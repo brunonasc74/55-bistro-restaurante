@@ -28,7 +28,6 @@ export const Section = styled.section`
     -webkit-animation: moving 8s linear infinite;
     -moz-animation: moving 8s linear infinite;
     -o-animation: moving 8s linear infinite;
-
     transform-origin: 50% -400%;
     -webkittransform-origin: 50% -400%;
     -moz-transform-origin: 50% -400%;

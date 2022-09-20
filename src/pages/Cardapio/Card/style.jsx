@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledCard = styled.div`
 
 padding: 0.5rem;
+margin-bottom: 50px;
 
     section {
         display: flex;
@@ -42,9 +43,14 @@ padding: 0.5rem;
         padding: 0.4rem;
     }
     
+    .card-f-desc {
+        min-height: 200px;
+    }
+
     .card-desc {
         font-size: 16px;
         padding: 0.2rem;
+        
     }
 
     .card-np {
@@ -56,20 +62,13 @@ padding: 0.5rem;
     .card-name {
         margin: 0;
         height: 25px;
+        font-size: 18px;
     }
 
     .card-price {
         margin: 0;
         height: 25px;
-    }
-
-    .card-button {
-        display: flex;
-        margin-left: 5px;
-    }
-
-    .btn {
-        transition: 1s;
+        color: #ff3a39;
     }
 
 `

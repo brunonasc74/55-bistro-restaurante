@@ -1,110 +1,49 @@
-import Button from "../Button/style";
 import { StyledCard } from "./style";
+import { useState, useEffect } from "react";
 
-const Card = ({ image, name, price, desc }) => {
+const Card = ({ categoria, all, rota }) => {
+  const [food, setFood] = useState([]);
+  const url = `https://restaurante-api-resilia.herokuapp.com/${rota}`;
+
+  const getApi = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setFood(data);
+    console.log(data);
+  };
+
+  useEffect(() => {
+    getApi();
+  }, [food]);
+
   return (
     <StyledCard>
       <section className="cards">
-        <div className="card">
-          <div className="card-image">
-            <img src={image} alt={name} />
-          </div>
-          <div className="card-content">
-            <div className="card-np">
-              <p className="card-name">{name}</p>
-              <p className="card-price">{price}</p>
-            </div>
-            <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image">
-            <img src={image} alt={name} />
-          </div>
-          <div className="card-content">
-            <div className="card-np">
-              <p className="card-name">{name}</p>
-              <p className="card-price">{price}</p>
-            </div>
-            <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image">
-            <img src={image} alt={name} />
-          </div>
-          <div className="card-content">
-            <div className="card-np">
-              <p className="card-name">{name}</p>
-              <p className="card-price">{price}</p>
-            </div>
-            <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image">
-            <img src={image} alt={name} />
-          </div>
-          <div className="card-content">
-            <div className="card-np">
-              <p className="card-name">{name}</p>
-              <p className="card-price">{price}</p>
-            </div>
-            <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image">
-            <img src={image} alt={name} />
-          </div>
-          <div className="card-content">
-            <div className="card-np">
-              <p className="card-name">{name}</p>
-              <p className="card-price">{price}</p>
-            </div>
-            <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image">
-            <img src={image} alt={name} />
-          </div>
-          <div className="card-content">
-            <div className="card-np">
-              <p className="card-name">{name}</p>
-              <p className="card-price">{price}</p>
-            </div>
-            <p className="card-desc">{desc}</p>
-            <div className="card-button">
-              <Button className="btn">Adicionar</Button>
-            </div>
-          </div>
-        </div>
+        {food.map((item) => {
+          if (item.categoria === categoria || all) {
+            return (
+              <div className="card">
+                <div className="card-image">
+                  <img src={item.imagem} alt={item.nome} />
+                </div>
+                <div className="card-content">
+                  <div className="card-desc">
+                    <div className="card-np">
+                      <p className="card-name">{item.nome}</p>
+                      <p className="card-price">R${item.preco}</p>
+                    </div>
+                  </div>
+                  <div className="card-f-desc">
+                    <p className="card-desc">{item.descricao}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          }
+        })}
       </section>
     </StyledCard>
   );
-};
-
-Card.defaultProps = {
-  image: "https://via.placeholder.com/150",
-  name: "Nome do produto",
-  price: "R$ 00,00",
-  desc: "Descrição do produto uihsdugfhusid lorem ipsum mjwaksoidmjioamcjf iaosmjfijosiafj",
 };
 
 export default Card;

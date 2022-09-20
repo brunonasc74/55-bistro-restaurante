@@ -56,4 +56,10 @@ export const StyledSelector = styled.div`
     font-size: 2rem;
     color: #ff3a39;
   }
+
+  .reg {
+    display: flex;
+    flex-direction: wrap;
+    
+  }
 `;
