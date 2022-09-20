@@ -17,6 +17,7 @@ const Button = styled.div`
         background-color: #080B10;
         border: 1px solid #ff3a39;
         color: #ff3a39;
+        transition: 0.5s;
     }
 `
 
