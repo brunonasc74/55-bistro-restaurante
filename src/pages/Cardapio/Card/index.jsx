@@ -1,9 +1,9 @@
 import { StyledCard } from "./style";
 import { useState, useEffect } from "react";
 
-const Card = ({ categoria, all }) => {
+const Card = ({ categoria, all, rota }) => {
   const [food, setFood] = useState([]);
-  const url = "https://restaurante-api-resilia.herokuapp.com/cardapios";
+  const url = `https://restaurante-api-resilia.herokuapp.com/${rota}`;
 
   const getApi = async () => {
     const response = await fetch(url);
@@ -14,7 +14,7 @@ const Card = ({ categoria, all }) => {
 
   useEffect(() => {
     getApi();
-  }, []);
+  }, [food]);
 
   return (
     <StyledCard>

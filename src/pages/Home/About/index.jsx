@@ -22,14 +22,14 @@ const About = () => {
 				<div className='flex'>
 					<CardAbout
 						number='01'
-						title='Bem localizado'
+						title='O melhor preço'
 						desc='Descrição do motivo por que seu restaurante
         é o melhor.descrição do motivo por que seu restaurante
         é o melhor'
 					/>
 					<CardAbout
 						number='02'
-						title='O melhor preço'
+						title='Bem localizado'
 						desc='Descrição do motivo por que seu restaurante
         é o melhor.descrição do motivo por que seu restaurante
         é o melhor'
