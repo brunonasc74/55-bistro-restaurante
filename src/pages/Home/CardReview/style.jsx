@@ -5,7 +5,7 @@ export const StyledCardReview = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	max-width: 500px;
-	min-height: 400px;
+	min-height: 500px;
 	background-color: #0d0d14;
 	border-radius: 10px;
 	padding: 40px;

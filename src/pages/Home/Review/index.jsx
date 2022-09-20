@@ -36,7 +36,7 @@ const Review = () => {
             foto={"./images/reviews/brenno.png"}
             nomeCliente={"Brenno"}
             cargo={"Irmão caçula da sócia"}
-            descricao={`Bom demais. Sensacional. Espetacular. Comida genial. Minha opinião não tem nada a ver com o fato de eu ter sido ameaçado. Foram só 3 vezes.`}
+            descricao={`Bom demais. Sensacional. Espetacular. Realmente cumpre o que promete. Decoração de extrema elegância. Sua comida é muito boa e tem uma ótima apresentação, os pratos não demoraram a chegar em minha mesa e a gerência é excelente.`}
           />
           <CardReview
             foto={"./images/reviews/gabriel.jpg"}
@@ -48,9 +48,14 @@ const Review = () => {
             foto={"./images/reviews/gustavo.png"}
             nomeCliente={"Gystavo"}
             cargo={"Fã"}
-            descricao={`Em um mundo coberto pelas trevas, vaguei sem nenhuma esperança na terra. Até me deparar com o restaurante +55Bistrô, o último Éden na terra, o lugar mais rico em vida que eu poderia imaginar. O MAIOR e MELHOR restaurante da nossa esquina! Sem comparação, não há algum defeito. Simplesmente o lugar que eu desejava: um lugar para comer em paz.`}
+            descricao={`Em um mundo coberto pelas trevas, vaguei sem nenhuma esperança até me deparar com o +55Bistrô! O último Éden na Terra, o lugar mais rico em vida que já vi. O MAIOR e MELHOR restaurante da nossa esquina! Simplesmente o lugar que eu desejava: um lugar para comer em paz.`}
           />
-          <CardReview />
+          <CardReview
+          foto={"./images/reviews/bruno.png"}
+          nomeCliente={'Bruno Silveira'}
+          cargo={'Cliente fiel'}
+          descricao={'A comida do restaurante é deveras maravilhosa. Se eu não fosse casado, com toda certeza pediria o chef em casamento, pois deve ser uma pessoa maravilhosa. Toda a equipe lançou a braba no atendimento.'}
+          />
         </ElasticCarousel>
       </div>
     </StyledSection>
