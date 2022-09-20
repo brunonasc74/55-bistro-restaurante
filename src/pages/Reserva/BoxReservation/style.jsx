@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const StyledBoxReservation = styled.div`
   .container {
     max-width: 1600px;
@@ -72,7 +71,7 @@ export const StyledBoxReservation = styled.div`
       p {
         font-size: 1rem;
         max-width: 450px;
-        color: #FFFFFF;
+        color: #ffffff;
         @media screen and (max-width: 700px) {
           max-width: unset;
         }
