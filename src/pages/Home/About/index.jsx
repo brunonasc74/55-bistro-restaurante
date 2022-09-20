@@ -23,23 +23,17 @@ const About = () => {
 					<CardAbout
 						number='01'
 						title='O melhor preço'
-						desc='Descrição do motivo por que seu restaurante
-        é o melhor.descrição do motivo por que seu restaurante
-        é o melhor'
+						desc='Comida de qualidade com preço justo, acessível e preparada com amor.'
 					/>
 					<CardAbout
 						number='02'
 						title='Bem localizado'
-						desc='Descrição do motivo por que seu restaurante
-        é o melhor.descrição do motivo por que seu restaurante
-        é o melhor'
+						desc='Localizado no centro da cidade, com fácil acesso e com estacionamento gratuito para clientes.'
 					/>
 					<CardAbout
 						number='03'
 						title='Menu'
-						desc='Descrição do motivo por que seu restaurante
-        é o melhor.descrição do motivo por que seu restaurante
-        é o melhor'
+						desc='Pratos com sabores de todos os cantos do Brasil direto para sua mesa. Uma tour gastronômica.'
 					/>
 				</div>
 			</StyledAbout>
