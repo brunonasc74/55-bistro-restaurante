@@ -49,7 +49,7 @@ const SectionTeam = () => {
               role="Desenvolvedor(a) Fullstack"
               github="https://github.com/KellySanttos"
               linkedin="https://www.linkedin.com/in/kellysanttos/"
-              text="Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site"
+              text="Eu sou a Kelly, uma menina sonhadora e intensa. Estou em constante evolução, me interesso e sempre encontro-me disposta a novos conhecimentos, adoro e pratico o aprender a aprender. Coisas novas e desafiadoras me fascinam e me deixam instigadas a querer sempre mais. Dificilmente sou surpreendida por algo, pois planejo cuidadosamente os passos que vou dar e analiso os riscos antes de tomar decisões."
             />
           </Box>
           <Box>

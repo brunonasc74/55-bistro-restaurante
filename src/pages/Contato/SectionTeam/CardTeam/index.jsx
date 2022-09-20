@@ -19,20 +19,20 @@ const CardTeam = ({ image, name, role, github, linkedin, twitter, text }) => {
             <p>{name}</p>
             <span>{role}</span>
             <BoxIcons>
-              <a href={github}>
+              <a target="_blank" href={github}>
                 <AiFillGithub className="icon" />
               </a>
-              <a href={linkedin}>
+              <a target="_blank" href={linkedin}>
                 <ImLinkedin className="icon" />
               </a>
-              <a href={twitter}>
+              <a target="_blank" href={twitter}>
                 <FaTwitter className="icon" />
               </a>
             </BoxIcons>
           </ContainerCard>
           <BoxText>
             <h4>Um pouco sobre mim..</h4>
-            <p className="p-cardteam">{text}</p>
+            <p>{text}</p>
           </BoxText>
         </Card>
       </>

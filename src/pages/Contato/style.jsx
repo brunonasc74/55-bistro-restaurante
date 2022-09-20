@@ -5,6 +5,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-bottom: 4rem;
+height: 100%;
 
 .p-contato {
   margin-top: 2rem;
@@ -19,8 +21,6 @@ align-items: center;
     font-size: 16px;
     text-align: justify;
 }
-
-
 
 }
 `
