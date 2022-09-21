@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledCard = styled.div`
   padding: 0.5rem;
   margin-bottom: 50px;
+  margin-top: 40px;
 
   section {
     display: flex;
