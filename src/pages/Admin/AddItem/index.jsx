@@ -31,23 +31,33 @@ const AddItem = ({ onAdd }) => {
 
 	return (
 		<StyledAddItem className='add-form' onSubmit={onSubmit}>
-			<div className='form-control'>
-				<label>Nome</label>
-				<input
-					type='text'
-					placeholder='Nome do item a ser cadastrado'
-					value={nome}
-					onChange={(e) => setNome(e.target.value)}
-				></input>
-			</div>
-			<div className='form-control'>
-				<label>Categoria</label>
-				<input
-					type='text'
-					placeholder='Categoria do item'
-					value={categoria}
-					onChange={(e) => setCategoria(e.target.value)}
-				></input>
+			<div className='flex'>
+				<div className='form-control'>
+					<label>Nome</label>
+					<input
+						type='text'
+						placeholder='Nome do item a ser cadastrado'
+						value={nome}
+						onChange={(e) => setNome(e.target.value)}
+					></input>
+				</div>
+				<div className='form-control'>
+					<label>Categoria</label>
+					<input
+						type='text'
+						placeholder='Categoria do item'
+						value={categoria}
+						onChange={(e) => setCategoria(e.target.value)}
+					></input>
+				</div>
+				<div className='form-control price'>
+					<label>Preço</label>
+					<input
+						type='number'
+						value={preco}
+						onChange={(e) => setPreco(e.target.value)}
+					></input>
+				</div>
 			</div>
 			<div className='form-control'>
 				<label>Descrição</label>
@@ -67,19 +77,10 @@ const AddItem = ({ onAdd }) => {
 					onChange={(e) => setImagem(e.target.value)}
 				></input>
 			</div>
-			<div className='form-control'>
-				<label>Preço</label>
-				<input
-					type='number'
-					placeholder='Preço do item (apenas números)'
-					value={preco}
-					onChange={(e) => setPreco(e.target.value)}
-				></input>
-			</div>
 
 			<input
 				type='submit'
-				value='Cadastrar item'
+				value='CADASTRAR PRODUTO'
 				className='btn btn-block'
 			></input>
 		</StyledAddItem>

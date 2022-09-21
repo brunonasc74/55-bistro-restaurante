@@ -1,8 +1,10 @@
-import React from 'react';
+import { useState } from 'react';
 import { Card } from './style';
 import EditItem from './EditItem';
 
 const Data = ({ id, nome, categoria, descricao, imagem, preco, onDelete }) => {
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
 		<>
 			<Card>
@@ -30,18 +32,20 @@ const Data = ({ id, nome, categoria, descricao, imagem, preco, onDelete }) => {
 					</div>
 				</div>
 				<div className='btns'>
-					<button onClick={() => alert(edit)}>EDITAR</button>
+					<button onClick={() => setIsOpen(!isOpen)}>EDITAR</button>
 					<button onClick={() => onDelete(id)}>DELETAR</button>
 				</div>
 			</Card>
-			<EditItem
-				idE={id}
-				nomeE={nome}
-				categoriaE={categoria}
-				descricaoE={descricao}
-				imagemE={imagem}
-				precoE={preco}
-			/>
+			{isOpen && (
+				<EditItem
+					idE={id}
+					nomeE={nome}
+					categoriaE={categoria}
+					descricaoE={descricao}
+					imagemE={imagem}
+					precoE={preco}
+				/>
+			)}
 		</>
 	);
 };

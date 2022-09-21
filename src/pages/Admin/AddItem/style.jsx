@@ -1,29 +1,30 @@
 import styled from 'styled-components';
 
 export const StyledAddItem = styled.form`
-	.form-control {
-		margin: 20px 0;
+	padding: 0 5%;
+	padding-top: 5%;
+	border-top: thin solid transparent;
+	border-bottom: none;
+	.flex {
+		display: flex;
+		gap: 1%;
+		* {
+			width: 100%;
+		}
+		.price {
+			width: 200px;
+		}
 	}
-	.form-control label {
-		display: block;
+	.form-control {
+		margin-bottom: 5px;
 	}
 	.form-control input {
+		border: thin solid #000;
+		border-radius: 5px;
 		width: 100%;
-		height: 40px;
-		margin: 5px;
-		padding: 3px 7px;
-		font-size: 17px;
+		padding: 5px;
 	}
-	.form-control-check {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.form-control-check label {
-		flex: 1;
-	}
-	.form-control-check input {
-		flex: 2;
-		height: 20px;
+	.btn {
+		margin: 15px 0 10px 0;
 	}
 `;
