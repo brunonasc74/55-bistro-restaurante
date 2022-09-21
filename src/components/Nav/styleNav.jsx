@@ -6,8 +6,8 @@ export const Container = styled.div`
 	align-items: center;
 	background-color: #0d0d14;
 	height: 6.5rem;
-	position: fixed;
-	z-index: 9999;
+	/* position: fixed; */
+	z-index: 33;
 	width: 100%;
 
 	a {

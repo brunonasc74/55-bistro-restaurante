@@ -144,4 +144,35 @@ export const Container = styled.div`
 			padding: 0;
 		}
 	}
+
+	@media (max-width: ${({ theme }) => theme.screen.lg}) {
+		.timings.flex-col {
+			width: 310px;
+			margin: 0 auto;
+		}
+
+		.footer-top .flex-col .timings li {
+			width: 80%;
+		}
+
+		.flex-col {
+			width: 100%;
+		}
+
+		.footer-top {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.footer-top .flex-col {
+			margin-top: 2rem;
+		}
+
+		.social {
+			justify-content: space-around;
+			width: 200px;
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
 `;
