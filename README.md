@@ -86,7 +86,7 @@ yarn start
    - Nessa rota o usuário é capaz de
 
 ### 2.2 - Tecnologias
-![Tecnologias](https://skillicons.dev/icons?i=react,nodejs,express) </details>
+![Tecnologias](https://skillicons.dev/icons?i=react) </details>
 
 ## 3. Desenvolvedores
 
@@ -96,7 +96,4 @@ yarn start
   
   
   </div>
-# projeto-m5
-
-Em andamento
 
