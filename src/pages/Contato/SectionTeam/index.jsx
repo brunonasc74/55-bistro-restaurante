@@ -60,7 +60,7 @@ const SectionTeam = () => {
               role="Desenvolvedor(a) Fullstack"
               github="https://github.com/ArturTolentino"
               linkedin="https://www.linkedin.com/in/artur-rodrigues-tolentino/"
-              text="Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site"
+              text="Meu nome é Artur, tenho 21 anos e sou do Norte de Minas Gerais. Gosto bastante de tecnologia e me interesso por diversas áreas."
             />
           </Box>
         </Container>
