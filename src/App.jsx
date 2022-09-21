@@ -39,8 +39,8 @@ function App() {
   );
 }
 
-const rootTeste = document.getElementById("root");
-ReactDOM.render(<Home />, rootTeste);
+const rootElement = document.getElementById("root");
+ReactDOM.render(<Home />, rootElement);
 
 
 export default App;
