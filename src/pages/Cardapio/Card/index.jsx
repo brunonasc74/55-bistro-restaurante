@@ -19,7 +19,7 @@ const Card = ({ categoria, all, rota }) => {
   return (
     <StyledCard>
       <section className="cards">
-        {food.map((item) => {
+        {food.slice(0).reverse().map((item) => {
           if (item.categoria === categoria || all) {
             return (
               <div className="card">
