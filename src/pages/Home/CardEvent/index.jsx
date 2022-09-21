@@ -1,6 +1,7 @@
 import { BiCalendar, BiTimeFive, BiLocationPlus } from 'react-icons/bi';
 import { StyledCardEvent } from './style';
 import Button from '../../Cardapio/Button/style';
+import { Link } from 'react-router-dom';
 
 const CardEvent = ({ title, date, time, location, desc }) => {
 	return (
@@ -15,9 +16,9 @@ const CardEvent = ({ title, date, time, location, desc }) => {
 				{location}
 			</div>
 			<p>{desc}</p>
-			<a>
+			<Link to='/reserva'>
 				<Button> Reserve já! </Button>
-			</a>
+			</Link>
 			<div className='mark'></div>
 		</StyledCardEvent>
 	);

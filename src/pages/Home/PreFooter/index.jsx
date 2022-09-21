@@ -6,9 +6,9 @@ const PreFooter = () => {
 		<StyledPreFooter>
 			<div>
 				<h1>Nós Fazemos Comidas Nutritivas&nbsp;e&nbsp;Deliciosas</h1>
-				<a>
+				<Link to='/reserva'>
 					<button>Reserve uma mesa agora</button>
-				</a>
+				</Link>
 			</div>
 		</StyledPreFooter>
 	);
