@@ -20,14 +20,14 @@ const Selector = () => {
         </div>
       </Link>
 
-      {/* <Link to="categoria" className="selector">
+      <Link to="categoria" className="selector">
         <div className="selector-item">
           <i>
             <FaMapMarkerAlt />
           </i>
           <span>Regionais</span>
         </div>
-      </Link> */}
+      </Link>
 
       <Link to="sobremesas" className="selector">
         <div className="selector-item">
