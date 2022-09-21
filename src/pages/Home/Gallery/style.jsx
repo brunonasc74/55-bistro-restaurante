@@ -27,7 +27,7 @@ export const StyledGallery = styled.section`
 		visibility: hidden;
 		opacity: 0;
 		transform: scale(0);
-		z-index: 1;
+		z-index: 9999;
 		overflow: hidden;
 		img {
 			margin-top: 20px;
