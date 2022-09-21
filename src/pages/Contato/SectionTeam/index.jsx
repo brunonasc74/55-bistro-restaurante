@@ -34,7 +34,7 @@ const SectionTeam = () => {
 					</Box>
 					<Box>
 						<CardTeam
-							image='./images/Bruna.jfif'
+							image='./images/Bruna.jpg'
 							name='Bruna Xavier'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/bruxvr'
@@ -44,7 +44,7 @@ const SectionTeam = () => {
 					</Box>
 					<Box>
 						<CardTeamReverse
-							image='./images/kelly.jfif'
+							image='./images/Kelly.jpg'
 							name='Kelly Santos'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/KellySanttos'
@@ -55,7 +55,7 @@ const SectionTeam = () => {
 					</Box>
 					<Box>
 						<CardTeam
-							image='./images/arthur.jfif'
+							image='./images/Arthur.jpg'
 							name='Artur Tolentino'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/ArturTolentino'
