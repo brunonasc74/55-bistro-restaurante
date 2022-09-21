@@ -14,14 +14,12 @@ function Cardapio() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <>
-        <Nav />
         <Title preTitle={"Seleção especial"} mainTitle={"do nosso menu"} />
         <Selector
           icon={
             "https://i.pinimg.com/originals/94/ee/2f/94ee2fda4931c26b3c55ed23d28e885e.png"
           }
         />
-        <Footer />
       </>
     </ThemeProvider>
   );

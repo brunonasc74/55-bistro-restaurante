@@ -8,12 +8,14 @@ import Review from './Review';
 import Event from './Event';
 import Recipe from './Recipe';
 import PreFooter from './PreFooter';
+import Preloader from './Preloader';
 
 const Home = () => {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyles />
 			<>
+				<Preloader />
 				<Header />
 				<About />
 				<Gallery />

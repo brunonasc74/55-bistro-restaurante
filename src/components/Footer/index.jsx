@@ -94,7 +94,7 @@ const Footer = () => {
 							<a href=''>Início</a>
 							<a href='/reserva'>Reservas</a>
 							<a href='/cardapio/menu'>Cardápio</a>
-							<a href='contato'>Equipe</a>
+							<a href='/contato'>Equipe</a>
 						</div>
 					</div>
 
