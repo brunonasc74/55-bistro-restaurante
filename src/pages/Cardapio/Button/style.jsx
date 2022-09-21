@@ -12,7 +12,7 @@ const Button = styled.div`
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
-    align-items: center;
+    text-align: center;
     justify-content: center;
 
     &:hover {
