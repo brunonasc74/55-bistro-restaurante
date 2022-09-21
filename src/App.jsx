@@ -7,11 +7,17 @@ import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
 import Card from "./pages/Cardapio/Card";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Preloader from "./pages/Home/Preloader";
+import ReactDOM from "react-dom";
+
 
 function App() {
   return (
     <div>
       <Router>
+      <div className="root">
+          <Preloader />
+        </div>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,4 +38,9 @@ function App() {
     </div>
   );
 }
+
+const rootTeste = document.getElementById("root");
+ReactDOM.render(<Home />, rootTeste);
+
+
 export default App;
