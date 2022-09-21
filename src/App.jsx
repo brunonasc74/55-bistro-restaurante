@@ -71,7 +71,7 @@ function App() {
 	);
 }
 
-const rootElement = document.getElementById('root');
-ReactDOM.render(<Home />, rootElement);
+// const rootElement = document.getElementById('root');
+// ReactDOM.render(<Home />, rootElement);
 
 export default App;

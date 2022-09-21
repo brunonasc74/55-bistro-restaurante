@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { MdClose, MdArrowBack, MdArrowForward } from 'react-icons/md';
 import Title from '../../../components/Title';
 import { StyledGallery, StyledContainer } from './style';
@@ -62,9 +63,9 @@ const Gallery = () => {
 					})}
 				</div>
 			</StyledContainer>
-			<a className='btn-gallery'>
+			<Link className='btn-gallery' to='/cardapio/menu'>
 				<button>Ficou com fome? Acesse nosso cardápio!</button>
-			</a>
+			</Link>
 		</StyledGallery>
 	);
 };
