@@ -1,18 +1,17 @@
 import React from 'react';
-import Button from '../Button';
+import { StyledHeader } from './style';
+import { Link } from 'react-router-dom';
 
-const Header = ({ onAdd, showAdd }) => {
+const Header = () => {
 	return (
-		<header>
-			<h1>
-				<span>+55</span> Bistrô
-			</h1>
-			<Button
-				color={showAdd ? '#fa3030' : '#1c881c'}
-				text={showAdd ? 'Fechar' : 'Criar'}
-				onClick={onAdd}
-			/>
-		</header>
+		<StyledHeader>
+			<Link to={'/'} className='link'>
+				<h1>
+					<span>+55</span> Bistrô
+				</h1>
+				<p>Voltar para o site</p>
+			</Link>
+		</StyledHeader>
 	);
 };
 

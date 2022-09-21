@@ -2,6 +2,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../../theme';
 import { StyledAdmin } from './style';
 import { useState, useEffect } from 'react';
+import Header from './Header';
 import Data from './Data';
 import AddItem from './AddItem';
 
@@ -34,6 +35,7 @@ const index = () => {
 			<>
 				<StyledAdmin>
 					<div className='container'>
+						<Header />
 						<AddItem onAdd={criarItem} />
 						{cardapio
 							.slice(0)
