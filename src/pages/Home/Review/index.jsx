@@ -42,7 +42,7 @@ const Review = () => {
             foto={"./images/reviews/gabriel.jpg"}
             nomeCliente={"Gabriel"}
             cargo={"Criador do Code Wars"}
-            descricao={`Achei a comida muito poggers. Não teve aquela demora que acho omegalul total, e a comida veio do jeito que eu pedi, se não eu iria achar meio noggers. Tava tudo bem temperado, já tomei uma micro diff, nota final: restaurante muito based.`}
+            descricao={`Em toda a minha vida nunca tive uma sensação como essa. Cada garfada no prato era como se eu tivesse ido para o céu e logo em seguida voltado à Terra naquela linda vista. Parabéns, esse foi o melhor dia da minha vida após comer nesse restaurante DIVINO! Recomendo, nota 1000 👍!!!`}
           />
           <CardReview
             foto={"./images/reviews/gustavo.png"}

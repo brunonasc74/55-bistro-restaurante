@@ -47,6 +47,15 @@ function App() {
 						}
 					>
 						<Route path='menu' element={<Card all rota='cardapios' />} />
+            <Route path="categoria" element={
+              <div>
+              {<Route path="norte" element={<p all rota="/categoria/norte">norte</p>} />},
+              {/* {<Route path="nordeste" element={<Card all rota="/categproa/nordeste" />} />},
+              {<Route path="centro-oeste" element={<Card all rota="/categoria/centroOeste" />} />},
+              {<Route path="sudeste" element={<Card all rota="/categoria/sudeste" />} />},
+              {<Route path="sul" element={<Card all rota="/categoria/sul" />} />} */}
+              </div>
+            }/>
 						<Route
 							path='sobremesas'
 							element={<Card all rota='cardapios/categoria/sobremesas' />}
