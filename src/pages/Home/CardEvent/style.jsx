@@ -11,6 +11,10 @@ export const StyledCardEvent = styled.div`
 		color: #fff;
 		margin: 0;
 	}
+
+	a {
+		text-decoration: none
+	}
 	div {
 		display: flex;
 		align-items: center;
