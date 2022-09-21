@@ -2,6 +2,16 @@ import styled from 'styled-components';
 import Container from '../../../components/styles/Container';
 
 export const StyledGallery = styled.section`
+	
+	.btn-gallery {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+	}
+
+	a {
+		text-decoration: none;
+	}
 	.model {
 		width: 100%;
 		height: 100%;
