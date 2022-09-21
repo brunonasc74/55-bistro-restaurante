@@ -14,27 +14,27 @@ const SectionTeam = () => {
 				<Container>
 					<Box>
 						<CardTeam
-							image='./images/Bruno.jpg'
+							image='./public/images/Bruno.jpg'
 							name='Bruno Nascimento'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/brunonasc74'
 							linkedin='https://www.linkedin.com/in/brunohpn/'
-							text='Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site'
+							text='Sou do interior de Minas Gerais. Um desenvolvedor web que ama aprender novas coisas todos os dias que também gosta de desenvolvimento mobile. Atualmente aprendendo mais sobre React. Sinta-se à vontade para entrar em contato comigo a qualquer hora.'
 						/>
 					</Box>
 					<Box>
 						<CardTeamReverse
-							image='./images/shiellyn.jpeg'
+							image='./public/images/shiellyn.jpeg'
 							name='Shiellyn Ferreira'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/ShiellynFerr'
 							linkedin='https://www.linkedin.com/in/shiellyn-ferreira/'
-							text='Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site'
+							text='Meu nome é Shiellyn, tenho 20 anos e sou da cidade de Guarulhos - SP. Desde pequena sempre fui o tipo de pessoa que se interessava por diversos assuntos, muito curiosa, criativa e disposta a aprender coisas novas e acredito que ser assim foi o que me fez chegar até a área da tecnologia.'
 						/>
 					</Box>
 					<Box>
 						<CardTeam
-							image='./images/Bruna.jpg'
+							image='./public/images/Bruna.jfif'
 							name='Bruna Xavier'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/bruxvr'
@@ -44,22 +44,23 @@ const SectionTeam = () => {
 					</Box>
 					<Box>
 						<CardTeamReverse
-							image='./images/Kelly.jpg'
+							image='./public/images/kelly.jfif'
 							name='Kelly Santos'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/KellySanttos'
 							linkedin='https://www.linkedin.com/in/kellysanttos/'
-							text='Eu sou a Kelly, uma menina sonhadora e intensa. Estou em constante evolução, me interesso e sempre encontro-me disposta a novos conhecimentos, adoro e pratico o aprender a aprender. Coisas novas e desafiadoras me fascinam e me deixam instigadas a querer sempre mais. Dificilmente sou surpreendida por algo, pois planejo cuidadosamente os passos que vou dar e analiso os riscos antes de tomar decisões.'
+							text='Eu sou Kelly, uma menina sonhadora e intensa. Estou em constante evolução, me interesso e sempre encontro-me disposta a novos conhecimentos.
+              Dificilmente sou surpreendida por algo, pois planejo cuidadosamente os passos que vou dar e analiso os riscos antes de tomar decisões.'
 						/>
 					</Box>
 					<Box>
 						<CardTeam
-							image='./images/Arthur.jpg'
+							image='./public/images/arthur.jfif'
 							name='Artur Tolentino'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/ArturTolentino'
 							linkedin='https://www.linkedin.com/in/artur-rodrigues-tolentino/'
-							text='Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site Essa pessoa fez o site site site fez site'
+							text='Meu nome é Artur, tenho 21 anos e sou do Norte de Minas Gerais. Gosto bastante de tecnologia e me interesso por diversas áreas.'
 						/>
 					</Box>
 				</Container>
