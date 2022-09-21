@@ -8,7 +8,9 @@ export const StyledAdmin = styled.div`
 	padding: 0;
 	background-color: #fff;
 	color: #000;
-	width: 1200px;
-	max-width: 95%;
-	margin: auto;
+	.container {
+		width: 1200px;
+		max-width: 95%;
+		margin: auto;
+	}
 `;

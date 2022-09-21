@@ -24,21 +24,23 @@ const index = () => {
 		<ThemeProvider theme={theme}>
 			<>
 				<StyledAdmin>
-					{cardapio.map((card, index) => {
-						return (
-							<Data
-								key={index}
-								id={card.id}
-								nome={card.nome}
-								categoria={card.categoria}
-								descricao={card.descricao}
-								imagem={card.imagem}
-								preco={card.preco}
-								edit={card.id}
-								onDelete={deletarTask}
-							/>
-						);
-					})}
+					<div className='container'>
+						{cardapio.map((card, index) => {
+							return (
+								<Data
+									key={index}
+									id={card.id}
+									nome={card.nome}
+									categoria={card.categoria}
+									descricao={card.descricao}
+									imagem={card.imagem}
+									preco={card.preco}
+									edit={card.id}
+									onDelete={deletarTask}
+								/>
+							);
+						})}
+					</div>
 				</StyledAdmin>
 			</>
 		</ThemeProvider>
