@@ -6,6 +6,7 @@ import Cardapio from './pages/Cardapio';
 import Contato from './pages/Contato';
 import NotFound from './pages/NotFound';
 import Admin from './pages/Admin';
+import Card from './pages/Cardapio/Card';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
