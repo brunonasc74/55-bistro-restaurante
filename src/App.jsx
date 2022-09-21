@@ -10,12 +10,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Preloader from "./pages/Home/Preloader";
 import ReactDOM from "react-dom";
 
-
 function App() {
   return (
     <div>
       <Router>
-      <div className="root">
+        <div className="root">
           <Preloader />
         </div>
         <Nav />
@@ -24,6 +23,15 @@ function App() {
           <Route path="/reserva" element={<Reserva />} />
           <Route path="/cardapio/*" element={<Cardapio />}>
             <Route path="menu" element={<Card all rota="cardapios" />} />
+            <Route path="categoria" element={
+              <div>
+              {<Route path="norte" element={<p all rota="/categoria/norte">norte</p>} />},
+              {/* {<Route path="nordeste" element={<Card all rota="/categproa/nordeste" />} />},
+              {<Route path="centro-oeste" element={<Card all rota="/categoria/centroOeste" />} />},
+              {<Route path="sudeste" element={<Card all rota="/categoria/sudeste" />} />},
+              {<Route path="sul" element={<Card all rota="/categoria/sul" />} />} */}
+              </div>
+            }/>
             <Route
               path="sobremesas"
               element={<Card all rota="cardapios/categoria/sobremesas" />}
@@ -41,6 +49,5 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Home />, rootElement);
-
 
 export default App;
