@@ -183,4 +183,10 @@ export const Container = styled.div`
 			padding: 0;
 		}
 	}
+
+	@media (max-width: ${({ theme }) => theme.screen.xs}) {
+		.footer-top .flex-col .timings {
+			width: 220px;
+		}
+	}
 `;
