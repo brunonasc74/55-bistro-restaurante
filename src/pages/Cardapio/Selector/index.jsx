@@ -20,7 +20,7 @@ const Selector = () => {
         </div>
       </Link>
 
-      <Link to="regioes" className="selector">
+      <Link to="categoria" className="selector">
         <div className="selector-item">
           <i>
             <FaMapMarkerAlt />

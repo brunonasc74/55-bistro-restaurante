@@ -3,7 +3,6 @@ import { MdClose, MdArrowBack, MdArrowForward } from 'react-icons/md';
 import Title from '../../../components/Title';
 import { StyledGallery, StyledContainer } from './style';
 import data from './data';
-import Button from '../../Cardapio/Button/style';
 
 const Gallery = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +62,7 @@ const Gallery = () => {
 					})}
 				</div>
 			</StyledContainer>
-			<a className="btn-gallery" href="/cardapio/menu"><Button>Cardápio</Button></a>
+			<a className="btn-gallery" href="/cardapio/menu"><button>Ficou com fome? Acesse nosso cardápio!</button></a>
 		</StyledGallery>
 	);
 };
