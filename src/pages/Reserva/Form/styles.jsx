@@ -13,7 +13,7 @@ export const StyledBoxForm = styled.div`
 
 		.formContainer {
 			position: absolute;
-			bottom: 15px;
+			bottom: 4.5rem;
 			left: 45.5%;
 			@media screen and (max-width: 700px) {
 				position: relative;

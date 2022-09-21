@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledBoxReservation = styled.div`
 	.container {
 		max-width: 1600px;
+		margin-bottom: 2rem;
 		@media screen and (min-width: 1600px) {
 			margin: 0 auto;
 		}
