@@ -62,7 +62,9 @@ const Gallery = () => {
 					})}
 				</div>
 			</StyledContainer>
-			<a className="btn-gallery" href="/cardapio/menu"><button>Ficou com fome? Acesse nosso cardápio!</button></a>
+			<a className='btn-gallery'>
+				<button>Ficou com fome? Acesse nosso cardápio!</button>
+			</a>
 		</StyledGallery>
 	);
 };
