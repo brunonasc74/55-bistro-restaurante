@@ -11,11 +11,10 @@ const BoxReservation = () => {
           <div className="description">
             <div className="title">
               <h1>Reserva</h1>
-              <h2>Make a Romantic Atmosphere Here</h2>
+              <h2>Tenha um encontro romântico e agradável</h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure
-              tempore eius suscipit fugit nam?
+            Realizando a sua Reserva Online, você garante o seu lugar com segurança.
             </p>
           </div>
         </div>

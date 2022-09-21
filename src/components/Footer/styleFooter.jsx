@@ -69,6 +69,10 @@ export const Container = styled.div`
 		background-color: #0d0d14;
 	}
 
+	.footer-top .flex-col .timings{
+		padding: 0;
+	}
+
 	.footer-top .flex-col .timings li {
 		display: flex;
 		align-items: center;
@@ -120,8 +124,12 @@ export const Container = styled.div`
 			margin: 0 auto;
 		}
 
+		.footer-top .flex-col .timings {
+			width: 250px;
+		}
+
 		.footer-top .flex-col .timings li {
-			width: 80%;
+			width: 75%;
 		}
 
 		.flex-col {
