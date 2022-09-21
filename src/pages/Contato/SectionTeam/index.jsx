@@ -14,7 +14,7 @@ const SectionTeam = () => {
 				<Container>
 					<Box>
 						<CardTeam
-							image='./public/images/Bruno.jpg'
+							image='./images/Bruno.jpg'
 							name='Bruno Nascimento'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/brunonasc74'
@@ -24,7 +24,7 @@ const SectionTeam = () => {
 					</Box>
 					<Box>
 						<CardTeamReverse
-							image='./public/images/shiellyn.jpeg'
+							image='./images/shiellyn.jpeg'
 							name='Shiellyn Ferreira'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/ShiellynFerr'
@@ -34,7 +34,7 @@ const SectionTeam = () => {
 					</Box>
 					<Box>
 						<CardTeam
-							image='./public/images/Bruna.jfif'
+							image='./images/Bruna.jfif'
 							name='Bruna Xavier'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/bruxvr'
@@ -44,7 +44,7 @@ const SectionTeam = () => {
 					</Box>
 					<Box>
 						<CardTeamReverse
-							image='./public/images/kelly.jfif'
+							image='./images/kelly.jfif'
 							name='Kelly Santos'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/KellySanttos'
@@ -55,7 +55,7 @@ const SectionTeam = () => {
 					</Box>
 					<Box>
 						<CardTeam
-							image='./public/images/arthur.jfif'
+							image='./images/arthur.jfif'
 							name='Artur Tolentino'
 							role='Desenvolvedor(a) Fullstack'
 							github='https://github.com/ArturTolentino'
