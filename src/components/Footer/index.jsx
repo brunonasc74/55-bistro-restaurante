@@ -22,8 +22,7 @@ const Footer = () => {
 								+55 <span>Bistrô</span>
 							</h4>
 							<p className='descricao'>
-								Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit
-								amet consectetur adipisici
+								Trazendo o melhor da comida brasileira para o seu prato.
 							</p>
 							<ul className='social'>
 								<li>
