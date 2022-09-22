@@ -57,23 +57,7 @@ export const StyledBoxForm = styled.div`
 						font-size: 1rem;
 						color-scheme: dark;
 					}
-
-					.name {
-						width: 49%;
-						margin-right: 4px;
-					}
-					.cpf {
-						width: 49%;
-					}
-
-					.email {
-						width: 49%;
-						margin-right: 4px;
-					}
-
-					.phone {
-						width: 49%;
-					}
+					
 
 					.dateTime input {
 						margin-right: 4px;
@@ -106,4 +90,23 @@ export const StyledBoxForm = styled.div`
 			}
 		}
 	}
+`;
+
+export const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  .InputBox {
+	width: 100%;
+    display: flex;
+    gap: 4px;
+  }
+
+  .InputBox div {
+	width: 49%;
+  }
+
+  .InputBox div input {
+	width: 100%;
+  }
 `;
