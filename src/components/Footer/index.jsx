@@ -90,10 +90,10 @@ const Footer = () => {
 						</div>
 						<div className='flex-col coluna4'>
 							<h4 className='titulo'>Mais Informações</h4>
-							<a href=''>Início</a>
-							<a href='/reserva'>Reservas</a>
-							<a href='/cardapio/menu'>Cardápio</a>
-							<a href='/contato'>Equipe</a>
+							<Link to='/admin'>Admin</Link>
+							<Link to='/reserva'>Reservas</Link>
+							<Link to='/cardapio/menu'>Cardápio</Link>
+							<Link to='/contato'>Equipe</Link>
 						</div>
 					</div>
 

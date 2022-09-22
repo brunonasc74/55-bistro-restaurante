@@ -49,7 +49,7 @@ export const StyledCardRecipe = styled.div`
 		justify-content: space-between;
 		padding: 20px;
 		padding-top: 0px;
-		min-height: 300px;
+		min-height: 400px;
 		h3 {
 			font-weight: normal;
 			transition: all 300ms ease-in-out;
