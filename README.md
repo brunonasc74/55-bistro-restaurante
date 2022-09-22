@@ -36,7 +36,7 @@ O ***+55 Bistrô*** é um restaurante *fictício* especializado em comida brasil
 A aplicação é uma Single Page Application (SPA), utilizando React.js e os endpoints da [API Rest](https://github.com/bruxvr/restaurante-api) criada com Node.js e Express.
 
 ### 1.2 - Visualização web
-- Clique [aqui](link) para visualizar a aplicação web.
+- Clique [aqui](https://55-bistro-restaurante.vercel.app/) para visualizar a aplicação web.
 
 ### 1.3 - Executando localmente
 #### 1.3.1 - Requisitos
