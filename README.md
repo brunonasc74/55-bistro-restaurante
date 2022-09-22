@@ -63,7 +63,7 @@ yarn install
 ```
 3. Inicie o projeto:
   ```
-yarn start
+yarn dev
 ```
 4. Abra o endereço local que aparecerá no terminal e visualize localmente no navegador a aplicação.
 
