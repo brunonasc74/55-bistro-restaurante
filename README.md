@@ -1,4 +1,4 @@
-# +55 Bistrô 
+# +55 Bistrô Restaurante
 
 ![Intro](https://github.com/brunonasc74/projeto-m5/blob/cardapio/%2B55bistro.gif)
 
@@ -83,7 +83,7 @@ yarn start
    - Nessa seção é possível visualizar os produtos do restaurante oriundos do [endpoint da API](https://github.com/bruxvr/restaurante-api)
 4. Contato
 5. Administrador
-   - Nessa rota o usuário é capaz de
+   - Nessa rota o usuário é capaz de criar, visualizar, remover e editar itens da API. 
 
 ### 2.2 - Tecnologias
 ![Tecnologias](https://skillicons.dev/icons?i=react) </details>
