@@ -8,7 +8,7 @@
 <h5><strong>Status do Projeto</strong></h5>
 
 
-  ![Badge](https://img.shields.io/badge/status-em%20andamento-yellow)
+  ![Badge](https://img.shields.io/badge/status-concluído-green)
 
 </div>
 
