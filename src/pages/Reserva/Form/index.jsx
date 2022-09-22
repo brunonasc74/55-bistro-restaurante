@@ -1,7 +1,7 @@
 import React from 'react';
-// import Container from "../../../components/styles/Container";
 import useForm from './useForm';
-import { StyledBoxForm } from './styles';
+import { StyledBoxForm, Box } from './styles';
+import Input from '../Input';
 
 const BoxForm = () => {
 	const name = useForm();
@@ -13,7 +13,7 @@ const BoxForm = () => {
 		e.preventDefault();
 		if (email.validate() && cpf.validate()) {
 			console.log('enviar');
-			alert('Enviado');
+			alert('Reserva enviada');
 		} else {
 			console.log('não enviar');
 		}
@@ -43,27 +43,42 @@ const BoxForm = () => {
 									placeholder='CPF'
 									{...cpf}
 								/>
-
-								<input
-									className='email'
-									type='email'
-									required
-									placeholder='Email'
-									{...email}
-								/>
-								<input
-									className='phone'
-									type='tel'
-									required
-									placeholder='Telefone'
-									{...phone}
-								/>
 							</div>
+							<Box>
+								<div className='InputBox'>
+									<Input
+										className='name'
+										type='name'
+										required
+										placeholder='Nome'
+										{...name}
+									/>
+									<Input
+										className='cpf'
+										type='text'
+										required
+										placeholder='CPF'
+										{...cpf}
+									/>
+								</div>
 
-							<div className='dateTime'>
-								<input className='date' type='date' />
-								<input className='time' type='time' />
-							</div>
+								<div className='InputBox'>
+									<Input
+										className='email'
+										type='email'
+										required
+										placeholder='Email'
+										{...email}
+									/>
+									<Input
+										className='phone'
+										type='tel'
+										required
+										placeholder='Telefone'
+										{...phone}
+									/>
+								</div>
+							</Box>
 
 							<button>
 								<span>Agendar</span>
@@ -74,56 +89,6 @@ const BoxForm = () => {
 				</div>
 			</div>
 		</StyledBoxForm>
-
-		// <RightContainer>
-		//   {/* <div className="background">
-		//     <img src="/public/images/bg1.jpg" alt="" />
-		//   </div> */}
-		//   <FormContainer>
-		//     <form onSubmit={handleSubmit}>
-		//       <ImgContainer>
-		//         <img src="./public/images/restaurant.jpg" alt="restaurant" />
-		//       </ImgContainer>
-
-		//       <FormInner>
-		//         <div className="boxOne">
-		//           <input
-		//             id="name"
-		//             type="text"
-		//             required
-		//             placeholder="Nome"
-		//             {...name}
-		//           />
-
-		//           <input id="cpf" type="text" required placeholder="CPF" {...cpf} />
-		//         </div>
-
-		//         <div className="boxTwo">
-		//           <input type="email" required placeholder="Email" {...email} />
-
-		//           <input
-		//             type="tel"
-		//             id="phone"
-		//             required
-		//             placeholder="Telefone"
-		//             {...phone}
-		//           />
-		//         </div>
-
-		//         <div className="DateTime">
-		//           <input type="date" />
-		//           <input className="Time" type="time" />
-		//         </div>
-
-		//         <button>
-		//           <span>Agendar</span>
-		//         </button>
-
-		//       </FormInner>
-		//     </form>
-		//   </FormContainer>
-		// </RightContainer>
-		// // </Container>
 	);
 };
 
