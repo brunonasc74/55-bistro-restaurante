@@ -1,6 +1,6 @@
 # +55 Bistrô Restaurante
 
-![Intro](https://github.com/brunonasc74/projeto-m5/blob/cardapio/%2B55bistro.gif)
+<img src="./public/images/+55bistro.gif">
 
 > Este é o Projeto Final do Módulo 5 da turma Geração Futuro (*Stone + Resilia*) no bootcamp de Web Development Full Stack<br>
 
@@ -77,13 +77,46 @@ yarn start
 ## 2.0 - Navegação
 ### 2.1 - Páginas
 1. Página inicial
+ - Rota '/home' para página Home: Esta é a página com a qual o cliente se depara ao entrar no site
+ <br/>
+ <div align="center">
+ <img width="500px" src="./public/images/home.gif">
+ </div>
+
+
 2. Reserva
-   - Nessa página o usuário é capaz de fazer sua reserva, com validação em todos os campos. 
+- Rota '/reserva' para página Reserva: Nessa página o usuário é capaz de fazer sua reserva, com validação em todos os campos. 
+     <div align="center">
+    <img width="500px" src="./public/images/reserva.gif">
+     </div> 
 3. Menu
-   - Nessa seção é possível visualizar os produtos do restaurante oriundos do [endpoint da API](https://github.com/bruxvr/restaurante-api)
+ - Rota '/cardapio' para página Cardápio: Nessa seção é possível visualizar os produtos do restaurante oriundos do [endpoint da API](https://github.com/bruxvr/restaurante-api)
+
+  <div align="center">
+  <img aling="center" width="500px" src="./public/images/cardapio.gif">
+  </div>
+
+
 4. Contato
+- Rota '/contato' para página Contato: Nessa página é possivel conhecer um pouco mais os integrantes do squad que desenvolveram o site.
+
+<div align="center">
+ <img width="500px" src="./public/images/contato.gif">
+</div>
+
 5. Administrador
-   - Nessa rota o usuário é capaz de criar, visualizar, remover e editar itens da API. 
+- Rota 'admin' para página Administrador: Nessa rota o usuário é capaz de criar, visualizar, remover e editar itens da API.
+
+<div align="center">
+<img width="500px" src="./public/images/admin.gif">
+</div>
+
+5. NotFound
+-  Caso o usuário pesquise uma rota que não existe, ele é redirecionado para página notfound.
+
+<div align="center">
+<img width="500px" src="./public/images/notfound.gif">
+</div>
 
 ### 2.2 - Tecnologias
 ![Tecnologias](https://skillicons.dev/icons?i=react) </details>
