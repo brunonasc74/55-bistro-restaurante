@@ -126,7 +126,8 @@ yarn start
 <div align='center'>
 
 [Bruno Nascimento](https://github.com/brunonasc74) | [Shiellyn Ferreira](https://github.com/ShiellynFerr) | [Bruna Xavier](https://github.com/bruxvr) | [Kelly Alves](https://github.com/KellySanttos) | [Artur Tolentino](https://github.com/ArturTolentino) |  
-  
+
+<!-- teste   -->
   
   </div>
 
