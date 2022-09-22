@@ -11,6 +11,7 @@ const Selector = () => {
   // onClick={setCategoria('all')}
   return (
     <StyledSelector>
+      <section className="selector-cont">
       <Link to="menu" className="selector">
         <div className="selector-item">
           <i>
@@ -20,14 +21,14 @@ const Selector = () => {
         </div>
       </Link>
 
-      {/* <Link to="categoria" className="selector">
+      <Link to="categoria" className="selector">
         <div className="selector-item">
           <i>
             <FaMapMarkerAlt />
           </i>
           <span>Regionais</span>
         </div>
-      </Link> */}
+      </Link>
 
       <Link to="sobremesas" className="selector">
         <div className="selector-item">
@@ -46,6 +47,7 @@ const Selector = () => {
           <span>Bebidas</span>
         </div>
       </Link>
+      </section>
       <Outlet />
     </StyledSelector >
   );

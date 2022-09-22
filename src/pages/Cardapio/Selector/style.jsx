@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const StyledSelector = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 30px;
   padding: 30px;
   margin-top: -50px;
-  flex-wrap: wrap;
 
   .selector {
     justify-content: center;
@@ -19,6 +19,13 @@ export const StyledSelector = styled.div`
     background-color: #080b10;
     transition: 0.5s;
     text-decoration: none;
+  }
+
+  .selector-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 
   .selector:focus {
@@ -60,6 +67,5 @@ export const StyledSelector = styled.div`
   .reg {
     display: flex;
     flex-direction: wrap;
-    
   }
 `;

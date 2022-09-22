@@ -15,6 +15,9 @@ function App() {
 	return (
 		<div>
 			<Router>
+				<div className='root'>
+					<Preloader />
+				</div>
 				<Routes>
 					<Route
 						path='/'
